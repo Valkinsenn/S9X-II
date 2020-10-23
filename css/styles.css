@@ -1,0 +1,69 @@
+/* ==============================
+Custom Fonts
+============================== */
+@font-face {
+    font-family: 'Steelfish';
+    src: url('/fonts/steelfish.ttf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans.ttf');
+}
+@font-face {
+    font-family: 'Dev Gothic';
+    src: url('/fonts/devgothic.ttf');
+}
+
+/* ==============================
+Font Variables
+============================== */
+:root {
+    --body-font: "Open Sans", sans-serif;
+    --header-font: "Steelfish", sans-serif;
+    --subheader-font: "Dev Gothic", sans-serif;
+}
+
+/* ==============================
+Color Variables
+============================== */
+:root {
+    --body-bg-color: hsl(0, 0%, 5%);
+    --navbar-bg-color: hsla(0, 0%, 10%, 25%);
+}
+
+/* ==============================
+Layout
+============================== */
+body {
+    background-color: var(--body-bg-color);
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+}
+
+/* ==============================
+Typography
+============================== */
+h1, h2, h3 {
+    font-family: var(--header-font);
+}
+
+h4, h5, h6 {
+    font-family: var(--subheader-font);
+}
+
+.nav-link {
+    font-family: var(--header-font);
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+/* ==============================
+Buttons
+============================== */
+
+/* ==============================
+Scrollbar
+============================== */

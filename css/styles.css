@@ -2,16 +2,20 @@
 Custom Fonts
 ============================== */
 @font-face {
-    font-family: 'Steelfish';
-    src: url('/fonts/steelfish.ttf');
+    font-family: 'Dev Gothic';
+    src: url('/fonts/devgothic.ttf');
+}
+@font-face {
+    font-family: 'Mechsuit';
+    src: url('/fonts/mechsuit.otf');
 }
 @font-face {
     font-family: 'Open Sans';
     src: url('/fonts/opensans.ttf');
 }
 @font-face {
-    font-family: 'Dev Gothic';
-    src: url('/fonts/devgothic.ttf');
+    font-family: 'Steelfish';
+    src: url('/fonts/steelfish.ttf');
 }
 
 /* ==============================
@@ -20,6 +24,7 @@ Font Variables
 :root {
     --body-font: "Open Sans", sans-serif;
     --header-font: "Steelfish", sans-serif;
+    --home-button-font: "Mechsuit", sans-serif;
     --subheader-font: "Dev Gothic", sans-serif;
 }
 
@@ -28,34 +33,87 @@ Color Variables
 ============================== */
 :root {
     --body-bg-color: hsl(0, 0%, 5%);
-    --navbar-bg-color: hsla(0, 0%, 10%, 25%);
+    --body-text-color: hsl(0, 0%, 65%);
+    --header-text-color: hsl(0, 0%, 80%);
+    --navbar-bg-color: hsla(0, 0%, 0%, 65%);
 }
 
 /* ==============================
 Layout
 ============================== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--body-bg-color);
+    min-height: 1000px;
 }
 
 .navbar {
     background-color: var(--navbar-bg-color);
 }
 
+.carousel-caption {
+    text-shadow: 0 0 5px black;
+}
+
+.carousel-card {
+    max-width: 350px;
+    max-height: 100px;
+    -webkit-filter: drop-shadow(0px 5px 5px black);
+}
+
+@media screen and (min-width: 600px) {
+    .carousel-image {
+        max-height: 450px;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
 /* ==============================
 Typography
 ============================== */
+body {
+    color: var(--body-text-color);
+    font-family: var(--body-font);
+}
+
 h1, h2, h3 {
+    color: var(--header-text-color);
     font-family: var(--header-font);
+    letter-spacing: .1rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 h4, h5, h6 {
+    color: var(--header-text-color);
     font-family: var(--subheader-font);
+}
+
+p {
+    line-height: 2rem;
+}
+
+.navbar-brand {
+    font-family: var(--subheader-font);
+    font-size: 1.5rem;
 }
 
 .nav-link {
     font-family: var(--header-font);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-family: var(--header-font);
+    font-size: 1.5rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
 }

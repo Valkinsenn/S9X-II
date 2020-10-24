@@ -30,14 +30,23 @@
                     <a href="#" class="nav-link px-3">Wiki</a>
                     <a href="#" class="nav-link px-3">Store</a>
                     <a href="#" class="nav-link px-3">Barracks</a>
-                    <a href="#" class="nav-link px-3">Join</a>
                 </div>
+                <span class="navbar-nav ml-auto">
+                    <a href="#" class="nav-link px-3">Join</a>
+                    <a href="#" class="nav-link px-3">Login</a>
+                </span>
             </div>
         </div>
     </nav>
 
+    <!-- Backing Video -->
+
+    <!-- <video autoplay muted loop id="bgVideo">
+        <source src="./video/s9flag.mp4" type="video/mp4">
+    </video> -->
+
     <!-- Main Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -48,12 +57,14 @@
                 <div class="carousel-caption d-none d-md-block">
                     <img src="./images/slidecard_1.png" class="carousel-card" alt="Halo: The Master Chief Collection">
                 </div>
+                <div class="carousel-card-shadow"></div>
             </div>
             <div class="carousel-item">
                 <img src="./images/slideshow_2.jpg" class="carousel-image d-block w-100" alt="Modern Warfare Price Breaching">
                 <div class="carousel-caption d-none d-md-block">
                     <img src="./images/slidecard_2.png" class="carousel-card" alt="Call of Duty: Modern Warfare"></p>
                 </div>
+                <div class="carousel-card-shadow"></div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -67,34 +78,79 @@
     </div>
 
     <!-- Hero Container -->
-    <div class="container py-5">
-        <div class="row row-content">
+    <div class="container-fluid py-5">
+        <div class="row row-content pt-5 pt-md-0">
             <div class="col">
                 <h1 class="text-center text-uppercase">We are Squad 9</h1>
             </div>
         </div>
         <div class="row row-content py-4">
-            <div class="col-md-9 mx-auto">
-                <p>Squad 9 is a worldwide community of players that formed on Halo: Combat Evolved for PC in 2003.   We have maintained an active presence in the world of FPS gaming ever since.  We aspire to become a top-tier gaming organization that offers our members the best team experience in today's gaming universe:</p>
+            <div class="col-lg-9 mx-auto">
+                <p>Squad 9 Gaming is a worldwide PC gaming community that formed on Halo: Combat Evolved in 2003, and has been active ever since. We aspire to offer our members the best team experience possible:</p>
             </div>
         </div>
-        <div class="row row-content">
+        <div class="row row-content pb-3">
             <div class="col">
-                <h3 class="text-center">TEAMWORK | EXPERIENCE | LEADERSHIP</h3>
+                <h3 class="text-center alt-motto">TEAMWORK | EXPERIENCE | LEADERSHIP</h3>
             </div>
         </div>
-        <div class="row row-content justify-content-center pt-4 pb-3">
-            <div class="col-md-3">
-                <a href="https://steamcommunity.com/groups/squad-9" target="_blank" class="btn btn-dark btn-lg btn-block text-md-right">Our Steam Group</a>
+        <div class="row row-content justify-content-center pt-4 pb-3 pb-md-0">
+            <div class="col-md-4 col-lg-3 mb-3">
+                <a href="https://steamcommunity.com/groups/squad-9" target="_blank" class="btn btn-dark btn-lg btn-block text-md-right shadow">Our Steam Group</a>
             </div>
-            <div class="col-md-3">
-                <a href="#" class="btn btn-dark btn-lg btn-block button-text-large">Join Us</a>
+            <div class="col-md-4 col-lg-3 mb-3">
+                <a href="#" class="btn btn-dark btn-lg btn-block button-text-large shadow">Join Us</a>
             </div>
-            <div class="col-md-3">
-                <a href="https://discord.com/invite/hFAz3f7" target="_blank" class="btn btn-dark btn-lg btn-block text-md-left">Our Discord</a>
+            <div class="col-md-4 col-lg-3">
+                <a href="https://discord.com/invite/hFAz3f7" target="_blank" class="btn btn-dark btn-lg btn-block text-md-left shadow">Our Discord</a>
             </div>
         </div>
     </div>
+    
+    <!-- Community Update Box -->
+    <div class="container-fluid container-bg-1 py-5">
+        <div class="row row-content justify-content-center">
+            <div class="col-md-6 col-lg-4 d-flex">
+                <img src="./images/com_update_img.jpg" alt="The Haunting in Verdansk" class="img-fluid com-update-img rounded-lg shadow">
+            </div>
+            <div class="col-md-6 col-lg-5 pt-4 pt-lg-0 d-flex flex-column justify-content-center">
+                <h2>Community Update</h2>
+                <h4>Squad 9 Gaming News</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur quisquam harum culpa aperiam perferendis soluta quidem voluptate dicta asperiores. Dolor fuga neque quia fugiat accusantium animi quod id tenetur?</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Older News Box -->
+    <div class="container-fluid">
+            <div class="row row-content justify-content-center py-5">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h3 class="text-lg-right">Old News #1</h3>
+                    <h5 class="text-lg-right">Old News Subtitle</h5>
+                    <p class="text-lg-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem doloribus blanditiis non illum placeat incidunt assumenda officia, sint nisi alias!</p>
+                </div>
+                <div class="col-md-4 col-lg-3 order-first order-lg-0 borders-lg">
+                    <h2 class="text-lg-center">Latest News</h2>
+                    <h4 class="text-lg-center">Old News Subtitle</h4>
+                    <p class="text-lg-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam, quas ea ratione cumque expedita ullam minus a corporis perferendis consequuntur ad, error eligendi? Doloremque?</p>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <h3>Old News #2</h3>
+                    <h5>Old News Subtitle</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iusto. Ipsum assumenda totam eius maxime deleniti reprehenderit culpa aut? Iste?</p>
+                </div>
+            </div>
+    </div>
+    
+    <footer class="container-fluid site-footer mt-5">
+        <div class="row bg-dark pt-3">
+            <div class="col py-0">
+                <p class="text-center">
+                    Copyright 2020 Squad 9 Gaming
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Spot for Scripts -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

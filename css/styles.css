@@ -32,7 +32,7 @@ Font Variables
 Color Variables
 ============================== */
 :root {
-    --body-bg-color: hsl(0, 0%, 5%);
+    --body-bg: hsl(0, 0%, 5%);
     --body-text-color: hsl(0, 0%, 65%);
     --header-text-color: hsl(0, 0%, 80%);
     --navbar-bg-color: hsla(0, 0%, 0%, 65%);
@@ -46,7 +46,8 @@ Layout
 }
 
 body {
-    background-color: var(--body-bg-color);
+    background-image: url("/images/");
+    background-color: var(--body-bg);
     min-height: 1000px;
 }
 
@@ -58,17 +59,53 @@ body {
     text-shadow: 0 0 5px black;
 }
 
+.carousel-image {
+    height: 50vh;
+    object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
 .carousel-card {
     max-width: 350px;
     max-height: 100px;
     -webkit-filter: drop-shadow(0px 5px 5px black);
 }
 
-@media screen and (min-width: 600px) {
+.carousel-card-shadow {
+    background-image: linear-gradient(to top, hsla(0, 0%, 0%, 90%), transparent);
+    height: 150px;
+    position: absolute;
+    bottom: 0; right: 0; left: 0;
+    z-index: 1;
+}
+
+.container-bg-1 {
+    background-image: url("/images/hero-container-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+}
+
+@media screen and (min-width: 576px) {
     .carousel-image {
-        max-height: 450px;
+        max-height: 400px;
         object-fit: cover;
-        z-index: 1;
+        z-index: 2;
+    }
+    .com-update-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .borders-lg {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
     }
 }
 
@@ -84,6 +121,11 @@ h1, h2, h3 {
     color: var(--header-text-color);
     font-family: var(--header-font);
     letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.alt-motto {
+    font-size: 1.35rem;
 }
 
 h1 {
@@ -118,10 +160,55 @@ p {
     text-transform: uppercase;
 }
 
+
+@media screen and (min-width: 576px) {
+    .alt-motto {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .text-lg-justify {
+        text-align: justify;
+    }
+}
+
 /* ==============================
 Buttons
 ============================== */
 
 /* ==============================
-Scrollbar
+Video Backing
 ============================== */
+#bgVideo {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* ==============================
+Custom Scrollbar
+============================== */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 10%); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 45%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

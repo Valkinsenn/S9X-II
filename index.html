@@ -38,10 +38,17 @@
                 <span class="navbar-nav ml-auto">
                     <a href="#" class="nav-link px-3">Join</a>
                     <a href="#" class="nav-link px-3">Login</a>
+                    <button class="music-player px-3" onclick="playPause()">
+                        <div id="playPause" class="pause"></div>
+                    </button>
                 </span>
             </div>
         </div>
     </nav>
+
+    <audio id="track" autoplay loop>
+        <source src="./audio/index_music.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- Backing Video -->
 
@@ -118,8 +125,8 @@
                 <img src="./images/com_update_img.jpg" alt="The Haunting in Verdansk" class="img-fluid com-update-img rounded-lg shadow">
             </div>
             <div class="col-md-6 col-lg-5 col-xl-4 pt-4 pt-lg-0 d-flex flex-column justify-content-center">
-                <h2>Community Update</h2>
-                <h4>Squad 9 Gaming News</h4>
+                <h2 class="text-center text-md-left">Community Update</h2>
+                <h4 class="text-center text-md-left">Squad 9 Gaming News</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aspernatur quisquam harum culpa aperiam perferendis soluta quidem voluptate dicta asperiores. Dolor fuga neque quia fugiat accusantium animi quod id tenetur?</p>
             </div>
         </div>
@@ -146,20 +153,31 @@
             </div>
     </div>
     
-    <footer class="container-fluid site-footer mt-5">
-        <div class="row bg-dark pt-3">
-            <div class="col py-0">
-                <p class="text-center">
-                    © Copyright 2020 Squad 9 Gaming
+    <!-- Footer -->
+    <footer class="container-fluid mt-5">
+        <div class="row bg-darkest pt-3 pb-2 justify-content-center">
+            <div class="col-md-5 col-lg-4 text-center">
+                <h2>
+                    For Honor and Glory
+                </h2>
+            </div>
+        </div>
+        <div class="row bg-darker pt-3 justify-content-center">
+            <div class="col-md-6 py-0">
+                <p class="text-center copyright-text">
+                    Copyright 2020 Squad 9 Gaming. All rights reserved.
                 </p>
             </div>
         </div>
     </footer>
 
+    <div class="backing-image-1"></div>
+
     <!-- Spot for Scripts -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
 
 </body>
 

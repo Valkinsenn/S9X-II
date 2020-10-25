@@ -24,7 +24,7 @@ Font Variables
 :root {
     --body-font: "Open Sans", sans-serif;
     --header-font: "Steelfish", sans-serif;
-    --home-button-font: "Mechsuit", sans-serif;
+    --hero-font: "Mechsuit", sans-serif;
     --subheader-font: "Dev Gothic", sans-serif;
 }
 
@@ -34,6 +34,8 @@ Color Variables
 :root {
     --body-bg: hsl(0, 0%, 5%);
     --body-text-color: hsl(0, 0%, 65%);
+    --footer-bg-1: hsl(0, 0%, 15%);
+    --footer-bg-2: hsl(0, 0%, 10%);
     --header-text-color: hsl(0, 0%, 80%);
     --navbar-bg-color: hsla(0, 0%, 0%, 85%);
 }
@@ -47,7 +49,7 @@ Layout
 
 body {
     background-attachment: fixed;
-    background-image: url("/images/main_bg.jpg");
+    /* background-image: url("/images/main_bg.jpg"); */
     background-color: var(--body-bg);
     background-position: center;
     background-size: cover;
@@ -89,6 +91,25 @@ body {
     background-position: center;
     background-size: cover;
     text-shadow: 0 2px 5px black, 0 2px 5px black;
+}
+
+.backing-image-1 {
+    background-attachment: fixed;
+    background-image: url("/images/main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    z-index: -100;
+}
+
+.bg-darker {
+    background: var(--footer-bg-1);
+}
+
+.bg-darkest {
+    background: var(--footer-bg-2);
 }
 
 @media screen and (min-width: 576px) {
@@ -162,10 +183,27 @@ p {
     text-transform: uppercase;
 }
 
+.motto-text {
+    color: var(--header-text-color);
+    font-family: var(--hero-font);
+    font-size: .75rem;
+    letter-spacing: .2rem;
+    margin-bottom: .25rem;
+}
+
+.copyright-text {
+    font-family: var(--subheader-font);
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+}
 
 @media screen and (min-width: 576px) {
     .alt-motto {
         font-size: 1.75rem;
+    }
+    .motto-text {
+        font-size: .85rem;
+        margin-bottom: .2rem;
     }
 }
 
@@ -180,6 +218,33 @@ Buttons
 ============================== */
 .btn-dark {
     border-color: transparent;
+}
+
+.music-player {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.music-player:focus {
+    outline: none;
+}
+
+.play {
+    background-image: url("/images/play.png");
+    background-position: center;
+    background-size: contain;
+    margin-right: 1px;
+    width: 14px;
+    height: 18px;
+}
+
+.pause {
+    background-image: url("/images/pause.png");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    height: 18px;
 }
 
 /* ==============================

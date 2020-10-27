@@ -86,7 +86,7 @@ body {
     z-index: 1;
 }
 
-.container-bg-1 {
+.container-bg {
     background-image: url("/images/hero-container-bg.jpg");
     background-position: center;
     background-size: cover;
@@ -220,10 +220,27 @@ Buttons
     border-color: transparent;
 }
 
+.navbar-brand {
+    filter: brightness(.65);
+}
+
+.navbar-brand .active {
+    filter: brightness(1);
+}
+
+.navbar-brand:hover {
+    filter: brightness(1);
+}
+
 .music-player {
     background: transparent;
     border: none;
+    filter: brightness(.65);
     outline: none;
+}
+
+.music-player:hover {
+    filter: brightness(1);
 }
 
 .music-player:focus {

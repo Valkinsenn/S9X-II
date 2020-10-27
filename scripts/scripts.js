@@ -9,6 +9,7 @@ const controlButton = document.querySelector("#playPause");
 // Functions
 window.onload = function() {
     pageAudio.volume = 0.15;
+    pageAudio.play();
 }
 
 function playPause() {

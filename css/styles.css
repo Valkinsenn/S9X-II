@@ -95,6 +95,10 @@ body {
     background: var(--footer-bg-2);
 }
 
+.com-update-img {
+    box-shadow: 0 3px 5px hsla(0, 0%, 0%, 50%);
+}
+
 @media screen and (min-width: 576px) {
     .carousel-image {
         height: 50vh;
@@ -120,6 +124,7 @@ Background Images
 ============================== */
 
 .container-bg {
+    background-attachment: fixed;
     background-image: url("/images/hero-container-bg.jpg");
     background-position: center;
     background-size: cover;

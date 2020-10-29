@@ -20,10 +20,13 @@
 
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top py-1">
-        <div class="container">
+        <div class="container-fluid">
             <a href="#" class="navbar-brand active">
                 <img src="./images/s9logo.png" alt="Squad 9 Warhawk" height="30" width="30">
             </a>
+            <button class="music-player ml-auto mr-2 px-3 d-sm-none" onclick="playPause()">
+                <div id="playPauseSmall" class="pause"></div>
+            </button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9xnavbar" aria-controls="s9xnavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,23 +41,16 @@
                 <span class="navbar-nav ml-auto">
                     <a href="#" class="nav-link px-3">Join</a>
                     <a href="#" class="nav-link px-3">Login</a>
-                    <button class="music-player px-3" onclick="playPause()">
+                    <button class="music-player px-3 d-none d-sm-block" onclick="playPause()">
                         <div id="playPause" class="pause"></div>
                     </button>
                 </span>
             </div>
-        </div>
     </nav>
 
     <audio id="track" autoplay loop>
         <source src="./audio/index_music.mp3" type="audio/mpeg">
     </audio>
-
-    <!-- Backing Video -->
-
-    <!-- <video autoplay muted loop id="bgVideo">
-        <source src="./video/s9flag.mp4" type="video/mp4">
-    </video> -->
 
     <!-- Main Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-ride="carousel">
@@ -122,7 +118,7 @@
     <div class="container-fluid container-bg pt-5 pb-4 pb-md-5">
         <div class="row row-content justify-content-center">
             <div class="col-md-6 col-lg-4 col-xl-3 d-flex">
-                <img src="./images/com_update_img.jpg" alt="The Haunting in Verdansk" class="img-fluid com-update-img rounded-lg shadow">
+                <img src="./images/com_update_img.jpg" alt="The Haunting in Verdansk" class="img-fluid com-update-img rounded-lg">
             </div>
             <div class="col-md-6 col-lg-5 col-xl-4 pt-4 pt-lg-0 d-flex flex-column justify-content-center">
                 <h1 class="text-center text-md-left">Community Update</h1>
@@ -165,7 +161,7 @@
                 <p>Squad 9's operations are made possible by financial contributions from both its members and the greater PC gaming community. Your support allows us to grow and maintain our presence on the games we play as a team.</p>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pb-5 pb-md-3">
             <a href="http://paypal.me/Squad9Gaming" target="_blank">
                 <img src="./images/donate-button.png" alt="Donate Button" class="donate-button">
             </a>

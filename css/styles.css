@@ -33,10 +33,11 @@ Color Variables
 ============================== */
 :root {
     --body-bg: hsl(0, 0%, 5%);
-    --body-text-color: hsl(0, 0%, 65%);
+    --body-text-color: hsl(0, 0%, 80%);
+    --body-text-color-2: white;
     --footer-bg-1: hsl(0, 0%, 15%);
     --footer-bg-2: hsl(0, 0%, 10%);
-    --header-text-color: hsl(0, 0%, 80%);
+    --header-text-color: hsl(0, 0%, 95%);
     --navbar-bg-color: hsla(0, 0%, 0%, 85%);
 }
 
@@ -86,24 +87,6 @@ body {
     z-index: 1;
 }
 
-.container-bg {
-    background-image: url("/images/hero-container-bg.jpg");
-    background-position: center;
-    background-size: cover;
-    text-shadow: 0 2px 5px black, 0 2px 5px black;
-}
-
-.backing-image-1 {
-    background-attachment: fixed;
-    background-image: url("/images/main_bg.jpg");
-    background-position: center;
-    background-size: cover;
-    position: fixed;
-    left: 0; top: 0;
-    width: 100vw; height: 100vh;
-    z-index: -100;
-}
-
 .bg-darker {
     background: var(--footer-bg-1);
 }
@@ -130,6 +113,33 @@ body {
         border-left: 1px solid white;
         border-right: 1px solid white;
     }
+}
+
+/* ==============================
+Background Images
+============================== */
+
+.container-bg {
+    background-image: url("/images/hero-container-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    text-shadow: 0 2px 5px black, 0 2px 5px black;
+}
+
+.container-bg-2 {
+    background-image: url("/images/container-bg-2.jpg");
+    color: white;
+}
+
+.backing-image-1 {
+    background-attachment: fixed;
+    background-image: url("/images/main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    z-index: -100;
 }
 
 /* ==============================
@@ -262,6 +272,48 @@ Buttons
     background-size: contain;
     width: 15px;
     height: 18px;
+}
+
+.donate-button {
+    max-width: 300px;
+}
+
+.official-link {
+    background-color: hsl(0, 0%, 0%);
+    transition: background-color .4s;
+    width: 65px; height: auto;
+}
+
+.steam {
+    background-color: hsl(222, 30%, 16%);
+}
+
+.steam:hover {
+    background-color: hsl(222, 30%, 12%);
+}
+
+.twitch {
+    background-color: hsl(261, 35%, 35%);
+}
+
+.twitch:hover {
+    background-color: hsl(261, 35%, 25%);
+}
+
+.twitter {
+    background-color: hsl(203, 50%, 25%);
+}
+
+.twitter:hover {
+    background-color: hsl(203, 50%, 15%);
+}
+
+.youtube {
+    background-color: hsl(0, 75%, 40%);
+}
+
+.youtube:hover {
+    background-color: hsl(0, 75%, 30%);
 }
 
 /* ==============================

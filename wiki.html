@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./images/s9_favicon.png" type="image/x-icon">
+
+    <!-- CSS Stuff -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Font Link (If Necessary) -->
+    <!-- <link rel="stylesheet" href="TBD"> -->
+
+    <title>Squad 9 Gaming</title>
+
+    <style>
+        .navbar-brand {
+            filter: brightness(.6);
+        }
+
+        .navbar-brand:hover {
+            filter: brightness(.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top py-1">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="./images/s9logo.png" alt="Squad 9 Warhawk"  class="navbar-brand-logo mr-2">
+                <span class="d-none d-sm-block">Squad 9 Gaming</span>
+            </a>
+            <button class="music-player ml-auto mr-2 px-3 d-sm-none" onclick="playPause()">
+                <div id="playPauseSmall" class="pause"></div>
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9xnavbar" aria-controls="s9xnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="s9xnavbar">
+                <div class="navbar-nav">
+                    <a href="./team.html" class="nav-link px-3">Team</a>
+                    <a href="./history.html" class="nav-link px-3">History</a>
+                    <a href="#" class="nav-link px-3 active">Wiki</a>
+                    <a href="#" class="nav-link px-3">Store</a>
+                    <a href="#" class="nav-link px-3">Barracks</a>
+                </div>
+                <span class="navbar-nav ml-auto">
+                    <a href="./joinus.html" class="nav-link px-3">Join</a>
+                    <a href="./loginpage.html" class="nav-link px-3">Login</a>
+                    <button class="music-player px-3 d-none d-sm-block" onclick="playPause()">
+                        <div id="playPause" class="pause"></div>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="track" autoplay loop>
+        <source src="./audio/wiki_music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row bg-darkest pt-4 pb-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center justify-content-md-start align-items-center">
+                <h2 class="text-center text-lg-left">
+                    For Honor and Glory
+                </h2>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-md-end pb-2 pb-md-0">
+                <a href="https://steamcommunity.com/groups/squad-9" target="_blank"><img src="./images/icons_steam.png" alt="Steam Group" class="official-link steam"></a>
+
+                <!-- <a href="https://discord.com/invite/hFAz3f7" target="_blank" class="ml-2"><img src="./images/icons_discord.png" alt="Discord Link" class="official-link discord"></a> -->
+
+                <a href="https://go.twitch.tv/squad9gaming" class="ml-2"><img src="./images/icons_twitch.png" alt="Twitch Icon" target="_blank" class="official-link twitch"></a>
+                
+                <a href="https://twitter.com/Squad9Gaming" class="ml-2"><img src="./images/icons_twitter.png" alt="Twitter Icon" target="_blank" class="official-link twitter"></a>
+
+                <a href="https://www.youtube.com/channel/UCy8-IsZjGxCZLPmWxYmH5rQ" class="ml-2"><img src="./images/icons_youtube.png" alt="YouTube Icon" target="_blank" class="official-link youtube"></a>
+
+            </div>
+        </div>
+        <div class="row bg-darker pt-3 justify-content-center">
+            <div class="col py-0">
+                <p class="text-center copyright-text">
+                    Copyright 2020 Squad 9 Gaming. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Spot for Scripts -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
+
+</body>
+</html>

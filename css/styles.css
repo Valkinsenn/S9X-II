@@ -153,6 +153,10 @@ Images
     width: 100%;
 }
 
+.history-img {
+    width: 100%;
+}
+
 /* ==============================
 Typography
 ============================== */
@@ -333,6 +337,24 @@ Horizontal Rules
     background-color: transparent;
     background-image: linear-gradient(to right, transparent, white, transparent);
     height: 1px;
+}
+
+/* ==============================
+Modals
+============================== */
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.close {
+    color: white;
+    margin-right: 1rem;
+    text-shadow: 0 2px 2px gray;
+    transition: color .2s;
 }
 
 /* ==============================

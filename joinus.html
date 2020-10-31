@@ -18,7 +18,38 @@
 
 <body>
 
-    <!-- Navbar is not required here!!! -->
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top py-1">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="./images/s9logo.png" alt="Squad 9 Warhawk"  class="navbar-brand-logo mr-2">
+                <span class="d-none d-sm-block">Squad 9 Gaming</span>
+            </a>
+            <button class="music-player ml-auto mr-2 px-3 d-sm-none" onclick="playPause()">
+                <div id="playPauseSmall" class="pause"></div>
+            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9xnavbar" aria-controls="s9xnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="s9xnavbar">
+                <div class="navbar-nav">
+                    <a href="./team.html" class="nav-link px-3">Team</a>
+                    <a href="./history.html" class="nav-link px-3">History</a>
+                    <a href="#" class="nav-link px-3 active">Wiki</a>
+                    <a href="#" class="nav-link px-3">Store</a>
+                    <a href="#" class="nav-link px-3">Barracks</a>
+                </div>
+                <span class="navbar-nav ml-auto">
+                    <a href="./joinus.html" class="nav-link px-3">Join</a>
+                    <a href="./loginpage.html" class="nav-link px-3">Login</a>
+                    <button class="music-player px-3 d-none d-sm-block" onclick="playPause()">
+                        <div id="playPause" class="pause"></div>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </nav>
     
     <!-- Spot for Scripts -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

@@ -14,14 +14,24 @@
     <!-- <link rel="stylesheet" href="TBD"> -->
 
     <title>Squad 9 Gaming</title>
+
+    <style>
+        .navbar-brand {
+            filter: brightness(.6);
+        }
+
+        .navbar-brand:hover {
+            filter: brightness(.8);
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Main Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top py-1">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top py-0">
         <div class="container">
-            <a href="#" class="navbar-brand d-flex align-items-center">
+            <a href="./index.html" class="navbar-brand d-flex align-items-center py-3 px-3 mr-0">
                 <img src="./images/s9logo.png" alt="Squad 9 Warhawk"  class="navbar-brand-logo mr-2">
                 <span class="d-none d-sm-block">Squad 9 Gaming</span>
             </a>
@@ -34,22 +44,102 @@
 
             <div class="collapse navbar-collapse" id="s9xnavbar">
                 <div class="navbar-nav">
-                    <a href="./team.html" class="nav-link px-3">Team</a>
-                    <a href="./history.html" class="nav-link px-3">History</a>
-                    <a href="#" class="nav-link px-3 active">Wiki</a>
-                    <a href="#" class="nav-link px-3">Store</a>
-                    <a href="#" class="nav-link px-3">Barracks</a>
+                    <a href="./team.html" class="nav-link px-3 py-3">Team</a>
+                    <a href="./history.html" class="nav-link px-3 py-3">History</a>
+                    <a href="#" class="nav-link px-3 py-3 active">Wiki</a>
+                    <a href="#" class="nav-link px-3 py-3">Store</a>
+                    <a href="#" class="nav-link px-3 py-3">Barracks</a>
                 </div>
                 <span class="navbar-nav ml-auto">
-                    <a href="./joinus.html" class="nav-link px-3">Join</a>
-                    <a href="./loginpage.html" class="nav-link px-3">Login</a>
-                    <button class="music-player px-3 d-none d-sm-block" onclick="playPause()">
+                    <a href="./joinus.html" class="nav-link px-3 py-3">Join</a>
+                    <a href="./loginpage.html" class="nav-link px-3 py-3">Login</a>
+                    <button class="music-player px-3 py-3 d-none d-sm-block" onclick="playPause()">
                         <div id="playPause" class="pause"></div>
                     </button>
                 </span>
             </div>
         </div>
     </nav>
+
+    <audio id="track" autoplay loop>
+        <source src="./audio/join_music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Main Container -->
+    <div class="container-fluid py-5 mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <h1 class="text-center">Welcome to Squad 9, Recruits!</h1>
+                <hr class="main-hor-rule">
+                <h4 class="text-center">Thank you for your interest in joining us.</h4>
+
+                <p class="text-center">We are currently accepting applications for membership. Before applying however, please ensure you meet the following criteria:</p>
+
+                <ol>
+                    <li>Be at least 16 years old.</li>
+                    <li>Have a working microphone or headset.</li>
+                    <li>Have Discord installed and ready to use.</li>
+                    <li>Play at least one of the games we operate on.</li>
+                    <li>Are not a part of any other groups or clans requiring tags.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3">
+                <img src="./images/recruit-game-1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-none d-sm-block">
+                <img src="./images/slidecard_1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-sm-none mt-4 mb-3 px-4">
+            </div>
+            <div class="col-sm-4 col-md-3">
+                <img src="./images/recruit-game-2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-none d-sm-block">
+                <img src="./images/slidecard_2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-sm-none my-4 px-4">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <p class="text-center mb-0">If you meet all the above requirements, click the button below, fill out the form, and submit it to us!</p>
+                <p class="text-center">You will be contacted by our Leadership over Steam or Discord if you are accepted.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="btn btn-dark btn-block">Apply Now</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row bg-darkest pt-4 pb-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 col-xl-3 d-flex flex-column justify-content-center justify-content-md-start align-items-md-baseline">
+                <h2 class="text-center text-lg-left">
+                    Squad 9 Gaming
+                </h2>
+                <h5 style="margin-top: -.5rem;" class="text-center">For honor and glory</h5>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-md-end pb-2 pb-md-0">
+                <a href="https://steamcommunity.com/groups/squad-9" target="_blank"><img src="./images/icons_steam.png" alt="Steam Group" class="official-link steam"></a>
+
+                <!-- <a href="https://discord.com/invite/hFAz3f7" target="_blank" class="ml-2"><img src="./images/icons_discord.png" alt="Discord Link" class="official-link discord"></a> -->
+
+                <a href="https://go.twitch.tv/squad9gaming" class="ml-2"><img src="./images/icons_twitch.png" alt="Twitch Icon" target="_blank" class="official-link twitch"></a>
+                
+                <a href="https://twitter.com/Squad9Gaming" class="ml-2"><img src="./images/icons_twitter.png" alt="Twitter Icon" target="_blank" class="official-link twitter"></a>
+
+                <a href="https://www.youtube.com/channel/UCy8-IsZjGxCZLPmWxYmH5rQ" class="ml-2"><img src="./images/icons_youtube.png" alt="YouTube Icon" target="_blank" class="official-link youtube"></a>
+
+            </div>
+        </div>
+        <div class="row bg-darker pt-3 justify-content-center">
+            <div class="col py-0">
+                <p class="text-center copyright-text">
+                    Copyright 2020 Squad 9 Gaming. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Backing Image -->
+    <div class="backing-image-1"></div>
     
     <!-- Spot for Scripts -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

@@ -157,6 +157,11 @@ Images
     width: 100%;
 }
 
+.recruitment-card-img {
+    filter: drop-shadow(0 5px 5px black);
+    width: 100%;
+}
+
 /* ==============================
 Typography
 ============================== */
@@ -206,6 +211,10 @@ p {
     font-size: 1.2rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
+}
+
+.nav-link:hover, .navbar-brand:hover, .music-player:hover {
+    background-color: hsla(0, 0%, 100%, 10%);
 }
 
 .btn {

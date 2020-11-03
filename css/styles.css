@@ -194,36 +194,6 @@ p {
     line-height: 2rem;
 }
 
-.navbar-brand {
-    font-family: var(--header-font);
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    /* -webkit-filter: brightness(.6); */
-}
-
-.navbar-brand-logo {
-    height: 30px;
-}
-
-.nav-link {
-    font-family: var(--header-font);
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-}
-
-.nav-link:hover, .navbar-brand:hover, .music-player:hover {
-    background-color: hsla(0, 0%, 100%, 10%);
-}
-
-.btn {
-    font-family: var(--header-font);
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-}
-
 .motto-text {
     color: var(--header-text-color);
     font-family: var(--hero-font);
@@ -270,6 +240,7 @@ Buttons
     border: none;
     filter: brightness(.65);
     outline: none;
+    transition: background-color .2s;
 }
 
 .music-player:hover {
@@ -295,6 +266,35 @@ Buttons
     background-size: contain;
     width: 15px;
     height: 18px;
+}
+
+.navbar-brand {
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    transition: background-color .2s, box-shadow .2s;
+    /* -webkit-filter: brightness(.6); */
+}
+
+.navbar-brand-logo {
+    height: 30px;
+}
+
+.nav-link {
+    border: 1px solid transparent;
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    transition: background-color .2s, box-shadow .2s;
+}
+
+.btn {
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
 }
 
 .donate-button {
@@ -337,6 +337,13 @@ Buttons
 
 .youtube:hover {
     background-color: hsl(0, 75%, 30%);
+}
+
+@media screen and (min-width: 576px) {
+    .nav-link:hover, .navbar-brand:hover, .music-player:hover {
+        background-color: hsla(0, 0%, 100%, 10%);
+        box-shadow: 0 3px white;
+    }
 }
 
 /* ==============================

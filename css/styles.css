@@ -39,6 +39,7 @@ Color Variables
     --footer-bg-2: hsl(0, 0%, 10%);
     --header-text-color: hsl(0, 0%, 95%);
     --navbar-bg-color: hsla(0, 0%, 0%, 85%);
+    --navlink-hover-color: hsla(210, 50%, 50%, 25%);
 }
 
 /* ==============================
@@ -341,7 +342,7 @@ Buttons
 
 @media screen and (min-width: 576px) {
     .nav-link:hover, .navbar-brand:hover, .music-player:hover {
-        background-color: hsla(0, 0%, 100%, 10%);
+        background-color: var(--navlink-hover-color);
         box-shadow: 0 3px white;
     }
 }
@@ -369,8 +370,41 @@ Modals
 .close {
     color: white;
     margin-right: 1rem;
-    text-shadow: 0 2px 2px gray;
+    text-shadow: 0 2px 2px var(--navlink-hover-color);
     transition: color .2s;
+}
+
+/* ==============================
+Forms
+============================== */
+.form-group {
+    background-color: hsl(0, 0%, 5%);
+    border-radius: .5rem;
+    padding: 1rem;
+    padding-top: .5rem;
+}
+
+.form-control {
+    background-color: inherit;
+    border: none;
+    border: 1px solid hsl(0, 0%, 15%);
+    /* border-radius: 0; */
+    color: var(--body-text-color);
+    /* padding-left: 0; */
+}
+
+.form-control:focus {
+    background-color: inherit;
+    box-shadow: 0 0 0 0 transparent;
+    border-color: var(--navlink-hover-color);
+    color: var(--body-text-color);
+}
+
+@media screen and (min-width: 576px) {
+    .form-group {
+        padding: 2rem;
+        padding-top: 1.5rem;
+    }
 }
 
 /* ==============================

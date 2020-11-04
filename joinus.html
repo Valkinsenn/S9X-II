@@ -68,14 +68,14 @@
     <!-- Main Container -->
     <div class="container-fluid py-5 mt-5">
         <div class="row justify-content-center">
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <h1 class="text-center">Welcome to Squad 9, Recruits!</h1>
                 <hr class="main-hor-rule">
-                <h4 class="text-center">Thank you for your interest in joining us.</h4>
+                <h4 class="text-center mb-4">Thank you for your interest in joining us.</h4>
 
-                <p class="text-center">We are currently accepting applications for membership. Before applying however, please ensure you meet the following criteria:</p>
+                <p class="text-center">We are currently accepting applications for membership. <br> Before applying however, please ensure you meet the following criteria:</p><br>
 
-                <ol>
+                <ol class="ml-0 pl-3">
                     <li>Be at least 16 years old.</li>
                     <li>Have a working microphone or headset.</li>
                     <li>Have Discord installed and ready to use.</li>
@@ -85,11 +85,11 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 col-lg-2">
                 <img src="./images/recruit-game-1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-none d-sm-block">
                 <img src="./images/slidecard_1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-sm-none mt-4 mb-3 px-4">
             </div>
-            <div class="col-sm-4 col-md-3">
+            <div class="col-sm-4 col-md-3 col-lg-2">
                 <img src="./images/recruit-game-2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-none d-sm-block">
                 <img src="./images/slidecard_2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-sm-none my-4 px-4">
             </div>
@@ -102,7 +102,307 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="btn btn-dark btn-lg btn-block">Apply Now</div>
+                <!-- <button class="btn btn-dark btn-lg btn-block" data-toggle="modal" data-target="#signupForm">Apply Now</button> -->
+                <a href="https://forms.gle/vXTcVgst5P1qVMT99" class="btn btn-dark btn-lg btn-block" target="_blank">Apply Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div class="modal fade" id="signupForm">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content justify-content-center">
+                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                    <h2 class="modal-title pl-3">Recruitment Form</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-darkest">
+                    <div class="container-fluid">
+                        <div class="row collapse show section-1" id="formPreamble">
+                            <div class="col">
+                                <h4 class="mb-0">Greetings, recruits!</h4>
+                                <p>Welcome to the official Squad 9 membership application.</p>
+                                <p>Please complete each section fully before submitting this form. For security purposes, you'll only be allowed to make one submission.</p>
+                                <p>After filing your application, a Squad 9 Recruiter will contact you and provide further instructions and orientation if your app is accepted. Contact a member of Officer Corps on our Discord for assistance if needed.</p>
+                                <p>Most applications are processed the same day they are filed. However, please allow up to one week for a response.</p><br>
+                                <p>For Honor and Glory, <br>
+                                ~S9~ Command Staff</p>
+                                <!-- <button class="btn btn-dark btn-lg" type="button" data-toggle="collapse" data-target=".section-1" aria-expanded="false" aria-controls="formPreamble basicInfo">Next</button> -->
+                            </div>
+                        </div>
+                        <form action="#" id="newRecruitForm" method="POST">
+
+                            <!-- Section #1 Basic Information -->
+                            <div class="collapse section-1 section-2" id="basicInfo">
+                                <h4>Section #1: Basic Information</h4>
+                                <p>Complete each field below to provide us with information to create your roster profile. All information we collect is for our internal records and is kept confidential.</p>
+                                <small><span class="text-danger">* Required</span></small>
+
+                                <!-- Email Address -->
+                                <div class="form-group mt-3">
+                                    <label for="emailAddress" class="col-form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" name="Email Address" id="emailAddress" class="form-control" aria-describedby="emailHelp" placeholder="Your email address" required>
+                                    <small id="emailAddressHelper" class="form-text text-muted"> Enter your email address.</small>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+
+                                <!-- Screen Name -->
+                                <div class="form-group">
+                                    <label for="screenName" class="col-form-label">Screen Name</label>
+                                    <input type="text" name="Screen Name" id="screenName" class="form-control" placeholder="Your screen name">
+                                    <small id="screenNameHelpBlock" class="form-text text-muted">Enter a screen name you want to be called by.</small>
+                                </div>
+                                
+                                <!-- Steam Profile Link -->
+                                <div class="form-group">
+                                    <label for="steamLink" class="col-form-label">Steam Profile Link</label>
+                                    <input type="text" name="Steam Profile Link" id="steamLink" class="form-control" placeholder="Your steam profile">
+                                    <small id="steamLinkHelpBlock" class="form-text text-muted">Enter a Steam profile URL if you have one. (Here's a <a href="https://steamtimeidler.com/support/request-a-steam-friend-invite/how-to-get-your-steam-profile-url-or-steam-username/" target="_blank">tutorial</a> if needed.)</small>
+                                </div>
+
+                                <!-- Battletag -->
+                                <div class="form-group">
+                                    <label for="battleTag" class="col-form-label">BattleTag | Activision ID</label>
+                                    <input type="text" name="BattleTag | Activision ID" id="battleTag" class="form-control" placeholder="Battletag or Activision ID">
+                                    <small id="battleTagHelper" class="form-text text-muted">Enter your Battle.net tag or Activision ID, if applicable.</small>
+                                </div>
+
+                                <!-- Xbox LIVE Gamertag -->
+                                <div class="form-group">
+                                    <label for="gamerTag" class="col-form-label">Xbox LIVE Gamertag</label>
+                                    <input type="text" name="Xbox LIVE Gamertag" id="gamerTag" class="form-control" placeholder="Xbox LIVE Gamertag">
+                                    <small id="gamerTagHelper" class="form-text text-muted">Enter your Xbox LIVE Gamertag, if applicable.</small>
+                                </div>
+
+                                <!-- Playstation Network ID -->
+                                <div class="form-group">
+                                    <label for="psnID" class="col-form-label">Playstation Network ID</label>
+                                    <input type="text" name="Playstation Network ID" id="psnID" class="form-control" placeholder="Playstation Network ID">
+                                    <small id="psnIDHelper" class="form-text text-muted">Enter your Playstation Network ID, if applicable.</small>
+                                </div>
+
+                                <!-- Age -->
+                                <div class="form-group">
+                                    <label for="age" class="col-form-label">Age <span class="text-danger">*</span></label>
+                                    <input type="text" name="Age" id="age" class="form-control" placeholder="Your age" required>
+                                    <small id="ageHelper" class="form-text text-muted">How old are you? If you're under 16, please contact our Command Staff.</small>
+                                </div>
+
+                                <!-- Timezone -->
+                                <div class="form-group">
+                                    <label for="timezone" class="col-form-label">Timezone <span class="text-danger">*</span></label>
+                                    <select name="Timezone" id="timezone" class="form-control" required>
+                                        <option selected>Choose...</option>
+                                        <option value="est">EST (UTC -5:00)</option>
+                                        <option value="cst">CST (UTC -6:00</option>
+                                        <option value="mst">MST (UTC -7:00)</option>
+                                        <option value="pst">PST (UTC -8:00)</option>
+                                        <option value="europe">Europe</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Asia">Asia</option>
+                                    </select>
+                                    <small id="timezoneHelper" class="form-text text-muted">Please select your timezone / region so we can gauge your availability.</small>
+                                </div>
+
+                                <!-- Voice -->
+                                <div class="form-group">
+                                    <label for="hasHeadset">Voice <span class="text-danger">*</span></label>
+                                    <select name="Headset" id="hasHeadset" class="form-control" required>
+                                        <option selected>Choose...</option>
+                                        <option value="hasHeadet">Yes, I have a headset or microphone.</option>
+                                        <option value="noHeadset">No, I don't have a headset or microphone.</option>
+                                    </select>
+                                    <small id="timezoneHelper" class="form-text text-muted">Do you have a headset or microphone?</small>
+                                </div>
+
+                                <!-- Section #1 Back and Next Buttons -->
+                                <!-- <a href="#formPreamble" class="btn btn-dark btn-lg" data-toggle="collapse" data-target=".section-1" aria-expanded="false" aria-controls="formPreamble pastExp">Back</a>
+                                <a href="#pastExp" class="btn btn-dark btn-lg ml-2" data-toggle="collapse" data-target=".section-2" aria-expanded="false" aria-controls="basicInfo pastExp">Next</a> -->
+                            </div>
+
+                            <!-- Section #2: Past Experience -->
+                            <div class="collapse section-2 section-3" id="pastExp">
+                                <h4>Section #2: About You</h4>
+                                <p>What does your gaming history look like? Were there any groups you were a part of before us? How about your gaming habits? Which game(s) are you interested in playing with us? Let us know in this section.</p>
+                                <small><span class="text-danger">* Required</span></small>
+
+                                <!-- Style and Skills -->
+                                <div class="form-group mt-3">
+                                    <label for="styleAndSkills">Style and Skills <span class="text-danger">*</span></label>
+                                    <textarea name="Style and Skills" id="styleAndSkills" class="form-control" placeholder="Style and Skills" required></textarea>
+                                    <small id="styleHelper" class="form-text text-muted">Tell us about yourself, your gaming style, what you excel at, and anything you'd like us to know about you.</small>
+                                </div>
+
+                                <!-- Past Groups -->
+                                <div class="form-group">
+                                    <label for="pastGroups">Prior Groups <span class="text-danger">*</span></label>
+                                    <input type="text" name="Prior Groups" id="pastGroups" class="form-control" placeholder="Prior groups" required>
+                                    <small id="pastGroupsHelper" class="form-text text-muted">Please list any teams or groups you were a part of before joining Squad 9.  If you weren't, just answer N/A or none.</small>
+                                </div>
+
+                                <!-- Prior Removals -->
+                                <div class="form-group">
+                                    <label for="priorRemovals">Prior Removals Removals <span class="text-danger">*</span></label>
+                                    <textarea name="Prior Group Removals" id="priorRemovals" class="form-control" placeholder="Prior Group Removals" required></textarea>
+                                    <small id="priorRemovalsHelper" class="form-text text-muted">Were you ever thrown out of Squad 9 or another group? If so, please explain. If not, please answer N/A or no.</small>
+                                </div>
+
+                                <!-- Gaming Bans -->
+                                <div class="form-group">
+                                    <label for="gameBans">Gaming Bans <span class="text-danger">*</span></label>
+                                    <input type="text" name="Gaming Bans" id="gameBans" class="form-control" placeholder="Gaming Bans" required>
+                                    <small id="gameBansHelper" class="form-text text-muted">Have you ever been banned on Steam or any other platform? If so, please explain the circumstances. Otherwise answer N/A or no.</small>
+                                </div>
+
+                                <!-- Reason for Joining -->
+                                <div class="form-group">
+                                    <label for="joinReason">Reason for Joining <span class="text-danger">*</span></label>
+                                    <textarea name="Prior Group Removals" id="joinReason" class="form-control" placeholder="Reason for Joining" required></textarea>
+                                    <small id="joinReasonHelper" class="form-text text-muted">Why do you want to join Squad 9?</small>
+                                </div>
+
+                                <!-- Expectations -->
+                                <div class="form-group">
+                                    <label for="expectations">Expectations <span class="text-danger">*</span></label>
+                                    <input type="text" name="Gaming Bans" id="expectations" class="form-control" placeholder="Expectations" required>
+                                    <small id="expectationsHelper" class="form-text text-muted">What do you expect to gain by joining Squad 9?</small>
+                                </div>
+
+                                <!-- Reference(s) -->
+                                <div class="form-group">
+                                    <label for="references">Reference(s) <span class="text-danger">*</span></label>
+                                    <input type="text" name="Reference(s)" id="references" class="form-control" placeholder="Reference(s)" required>
+                                    <small id="referencesHelper" class="form-text text-muted">What do you expect to gain by joining Squad 9?</small>
+                                </div>
+
+                                <!-- Games -->
+                                <div class="form-group mt-3">
+                                    <label for="games">Games <span class="text-danger">*</span></label>
+                                    <select name="Games" id="games" class="form-control" required>
+                                        <option selected>Choose one...</option>
+                                        <option value="playsHalo">Halo: The Master Chief Collection</option>
+                                        <option value="playsCoD">Call of Duty: Modern Warfare</option>
+                                    </select>
+                                    <small id="gamesHelper" class="form-text text-muted">Which game do you primarily want to play with Squad 9?</small>
+                                </div>
+
+                                <!-- Section #2 Back and Next Buttons -->
+                                <!-- <button class="btn btn-dark btn-lg" type="button" data-toggle="collapse" data-target=".section-2" aria-expanded="false" aria-controls="basicInfo pastExp">Back</button>
+                                <button class="btn btn-dark btn-lg ml-2" type="button" data-toggle="collapse" data-target=".section-3" aria-expanded="false" aria-controls="pastExp games">Next</button> -->
+                            </div>
+                            
+                            <!-- Section #3: Affirmations -->
+                            <div class="collapse section-3 section-4" id="affirmations">
+                                <h4>Section 3: Affirmations</h4>
+                                <p>This section outlines our Code of Conduct and some of the terms all members are required to meet in order to join.</p>
+                                <p>READ EACH QUESTION CAREFULLY BEFORE YOU ANSWER!</p>
+                                <small><span class="text-danger">* Required</span></small>
+
+                                <!-- Code of Conduct -->
+                                <div class="form-group mt-3">
+                                    <p>Code of Conduct</p>
+                                    <small class="d-block my-3">Our Code of Conduct contains nine points that govern our community and counter toxicity. <br>
+                                    <br>
+                                    The Code has been the bedrock of Squad 9's formation and continues to be the driving force behind our existence as a group.  Anyone representing us in competitive venues is expected to conduct themselves according to our standards - even if their involvement is limited exclusively to playing comp, we have zero tolerance for toxic players.<br>
+                                    <br>
+                                    RESPECT: Treat others how you expect to be treated.<br>
+                                    <br>
+                                    LOYALTY: Commit yourself to achieving the team’s goals.<br>
+                                    <br>
+                                    DUTY: Perform your assigned tasks and obey the rules.<br>
+                                    <br>
+                                    COURAGE: Stand firm when facing fear or adversity.<br>
+                                    <br>
+                                    INTEGRITY: Practice self-discipline and moral adherence.<br>
+                                    <br>
+                                    SELFLESSNESS: Put others first in all circumstances.<br>
+                                    <br>
+                                    TRUST: Follow your leaders and rely on your teammates.<br>
+                                    <br>
+                                    PATIENCE: Time your actions with purpose and precision.<br>
+                                    <br>
+                                    HONOR: Play fair, be accountable, and keep to the Code.</small>
+
+                                    <label for="codeOfConduct" class="col-form-label">Do you agree to follow the nine points of our Code of Conduct? <span class="text-danger">*</span></label>
+                                    <select name="Code of Conduct" id="codeOfConduct" class="form-control" required>
+                                        <option selected>Choose...</option>
+                                        <option value="no">No</option>
+                                        <option value="yes">Yes</option>
+                                    </select>
+                                    <small id="codeHelper" class="form-text text-muted">Please read through the Code of Conduct carefully before you answer!</small>
+                                </div>
+
+                                <!-- Squad 9 Tags -->
+                                <div class="form-group mt-3">
+                                    <p>Tags Agreement</p>
+                                    <small class="d-block my-3">Members of ~S9~ are expected to wear our tags and no others. This is to avoid conflicting loyalties and keeps our member base united. Anyone wishing to join another group must request a discharge.  Squad 9 members are not allowed to have multi-clan or cross-clan membership.</small>
+
+                                    <label for="s9Tags" class="col-form-label">Do you agree to wear only Squad 9's tags? <span class="text-danger">*</span></label>
+                                    <select name="Squad 9 Tags Agreement" id="s9Tags" class="form-control" required>
+                                        <option selected>Choose...</option>
+                                        <option value="no">No</option>
+                                        <option value="yes">Yes</option>
+                                    </select>
+                                    <small id="codeHelper" class="form-text text-muted">Please read through the above text carefully before you answer!</small>
+                                </div>
+
+                                <!-- Non-toxicity Agreement -->
+                                <div class="form-group mt-3">
+                                    <p>Non-Toxicity Agreement</p>
+                                    <small class="d-block my-3">Squad 9 has a zero-tolerance policy on toxic behavior. <br>
+                                    <br>
+                                    While we keep things relatively loose and maintain a light-hearted, easygoing community, we work at all times to ensure that the general atmosphere never loses its foundation of mutual respect in all interactions.</small>
+
+                                    <label for="nonToxicAgreement" class="col-form-label">Do you agree to be respectful to others at all times? <span class="text-danger">*</span></label>
+                                    <select name="Non-Toxicity Agreement" id="nonToxicAgreement" class="form-control" required>
+                                        <option selected>Choose...</option>
+                                        <option value="no">No</option>
+                                        <option value="yes">Yes</option>
+                                    </select>
+                                    <small id="codeHelper" class="form-text text-muted">Please read through the above text carefully before you answer!</small>
+                                </div>
+
+                                <!-- Fair Play Agreement -->
+                                <div class="form-group mt-3">
+                                    <p>Fair Play Agreement</p>
+                                    <small class="d-block my-3">Since its founding, Squad 9 has always prided itself on playing fair online, both within and apart from the team. <br>
+                                    <br>
+                                    Any member who is found to be using hacks or mods to bolster their competitive skill level; or unfairly exploiting online gameplay; or participating repeatedly in hacked lobbies or servers will receive a permanent ban.</small>
+
+                                    <label for="fairPlayAgreement" class="col-form-label">Do you agree never to hack or cheat while in Squad 9? <span class="text-danger">*</span></label>
+                                    <select name="Fair Play Agreement" id="fairPlayAgreement" class="form-control" required>
+                                        <option selected>Choose...</option>
+                                        <option value="no">No</option>
+                                        <option value="yes">Yes</option>
+                                    </select>
+                                </div>
+
+                                <!-- <button class="btn btn-dark btn-lg" type="button" data-toggle="collapse" data-target=".section-3" aria-expanded="false" aria-controls="pastExp affirmations">Back</button> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer bg-darker">
+                    <div class="collapse fade show section-1 mr-auto">
+                        <button class="btn btn-dark" type="button" data-toggle="collapse" data-target=".section-1" aria-expanded="false" aria-controls="formPreamble basicInfo">Next</button>
+                    </div>
+                    <div class="collapse fade section-1 section-2 mr-auto">
+                        <a href="#formPreamble" class="btn btn-dark btn-lg" data-toggle="collapse" data-target=".section-1" aria-expanded="false" aria-controls="formPreamble pastExp">Back</a>
+                        <a href="#pastExp" class="btn btn-dark btn-lg ml-2" data-toggle="collapse" data-target=".section-2" aria-expanded="false" aria-controls="basicInfo pastExp">Next</a>
+                    </div>
+                    <div class="collapse fade section-2 section-3 mr-auto">
+                        <button class="btn btn-dark btn-lg" type="button" data-toggle="collapse" data-target=".section-2" aria-expanded="false" aria-controls="basicInfo pastExp">Back</button>
+                        <button class="btn btn-dark btn-lg ml-2" type="button" data-toggle="collapse" data-target=".section-3" aria-expanded="false" aria-controls="pastExp games">Next</button>
+                    </div>
+                    <div class="collapse fade section-3 mr-auto">
+                        <button class="btn btn-dark btn-lg" type="button" data-toggle="collapse" data-target=".section-3" aria-expanded="false" aria-controls="pastExp affirmations">Back</button>
+                        <button class="btn btn-dark btn-lg" type="submit" form="newRecruitForm">Submit</button>
+                    </div>
+                    <button class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>

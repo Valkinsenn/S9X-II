@@ -36,6 +36,7 @@ Color Variables
     --body-text-color: hsl(0, 0%, 80%);
     --body-text-color-2: white;
     --btn-link-hover-color: hsl(210, 65%, 50%);
+    --btn-dark-bg-color: hsl(0, 0%, 20%);
     --footer-bg-1: hsl(0, 0%, 15%);
     --footer-bg-2: hsl(0, 0%, 10%);
     --header-text-color: hsl(0, 0%, 95%);
@@ -56,6 +57,10 @@ body {
     background-color: var(--body-bg);
     background-position: center;
     background-size: cover;
+}
+
+br {
+    line-height: .1rem;
 }
 
 .navbar {
@@ -155,6 +160,12 @@ Images
     width: 100%;
 }
 
+.rank-img {
+    max-height: 210px;
+    object-fit: contain;
+    width: 100%;
+}
+
 .history-img {
     width: 100%;
 }
@@ -167,9 +178,14 @@ Images
 /* ==============================
 Typography
 ============================== */
+:root {
+    font-size: 16px;
+}
+
 body {
     color: var(--body-text-color);
     font-family: var(--body-font);
+    font-size: .9rem;
 }
 
 h1, h2, h3 {
@@ -193,7 +209,7 @@ h4, h5, h6 {
 }
 
 p {
-    line-height: 2rem;
+    line-height: 1.6rem;
 }
 
 .motto-text {
@@ -211,6 +227,14 @@ p {
 }
 
 @media screen and (min-width: 576px) {
+    body {
+        font-size: 1rem;
+    }
+
+    p {
+        line-height: 1.8rem;
+    }
+
     .alt-motto {
         font-size: 1.75rem;
     }
@@ -256,6 +280,7 @@ Buttons
 }
 
 .btn-dark {
+    background-color: var(--btn-dark-bg-color);
     border-color: transparent;
 }
 

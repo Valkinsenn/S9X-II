@@ -161,7 +161,7 @@ Images
 }
 
 .rank-img {
-    max-height: 210px;
+    max-height: 150px;
     object-fit: contain;
     width: 100%;
 }
@@ -173,6 +173,14 @@ Images
 .recruitment-card-img {
     filter: drop-shadow(0 5px 5px black);
     width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .rank-img {
+        max-height: 210px;
+        object-fit: contain;
+        width: 100%;
+    }
 }
 
 /* ==============================

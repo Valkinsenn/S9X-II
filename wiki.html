@@ -84,7 +84,7 @@
                     <li>Alliances</li>
                 </ol>
 
-                <p class="text-center">Use the accordion below to navigate between different sections of the wiki:</p>
+                <p class="text-center">Click one of the sections below to navigate between different parts of the Wiki:</p>
 
                 <div class="accordion" id="wiki">
 
@@ -266,7 +266,7 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="recruit-body" class="collapse show" aria-labelledby="recruit-body" data-parent="#wiki">
+                        <div id="recruit-body" class="collapse" aria-labelledby="recruit-body" data-parent="#wiki">
                             <div class="card-body">
                                 <h4>Overview</h4>
                                 <h5>"Get set to come out swingin'!"</h5>
@@ -340,7 +340,6 @@
                                         <div id="enlist-process" class="collapse" aria-labelledby="prereq-header" data-parent="#enlist-accordion">
                                             <div class="card-body px-2">
                                                 <article>
-                                                    <h4>Step #2: Processing</h4>
                                                     <p>If the recruit’s application is to be accepted, the Processing Officer should do the following:</p>
                                                     <ol class="ml-0">
                                                         <li>Complete the recruit’s roster info on Airtable's New Recruit Apps (G-Forms) view, fill in any blank fields (upload avatar, set the Date Joined, PO = Processor, set rank, etc.) and select Accepted in the App Status column.</li>
@@ -353,43 +352,63 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Step #3: Probation -->
-                                <button class="btn btn-dark btn-lg btn-block py-3 text-left" type="button" data-toggle="collapse" data-target="#step3" aria-expanded="true" aria-controls="step3">
-                                    Step #3: Probation
-                                </button>
-                                <article class="collapse" id="step3">
-                                    <br>
-                                    <p>To ensure that new members meet a common standard of productivity in Squad 9, all recruits are given a 30-day period to complete the Rank Advancement Conditions (RACs) for Private, which requires them to perform the following:</p>
-                                    <ol>
-                                        <li>Complete orientation with a member of Officer Corps.
-                                            <ol class="ml-0">
-                                                <li>Tags issued: ~R-S9~ until all RACs for Private are complete.</li>
-                                                <li>Code of Conduct review.</li>
-                                                <li>Join Steam Group.</li>
-                                            </ol>
-                                        </li>
-                                        <li>Participate in at least one scheduled event / op or a full week of game nights.</li>
-                                        <li>Apply for promotion and receive approval from Officer Corps.</li>
-                                        <li>Complete all requirements within 30 days of becoming a Recruit.</li>
-                                    </ol>
-                                    <p>In addition to the PO, other members of Officer Corps or Command Staff can take part in facilitating the probation process, as having interactions with multiple members of leadership helps the recruit to integrate better. The main objective is to ensure they will be a good fit for Squad 9.</p>
-                                    <p>Officer Corps is responsible for tracking a new recruit’s progress during their probation. If a recruit fails to earn promotion or commits an infraction, they will be ejected and have to restart their recruitment from the beginning.  Any recruits found to be hacking will be Blacklisted and issued a permanent ban from the team.</p>
-                                    <p>Any recruit who is ejected more than twice for reasons other than hacking will be permanently banned.  Once a recruit earns their first promotion, they complete probation and are issued normal ~S9~ tags. </p>
-                                </article><br>
+                                    <!-- Probation -->
+                                    <div class="card bg-transparent">
+                                        <div class="card-header p-0" id="prereq-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#enlist-probation" aria-expanded="true" aria-controls="template">
+                                                Step #3: Probation
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="enlist-probation" class="collapse" aria-labelledby="prereq-header" data-parent="#enlist-accordion">
+                                            <div class="card-body px-2">
+                                                <article>
+                                                    <p>To ensure that new members meet a common standard of productivity in Squad 9, all recruits are given a 30-day period to complete the Rank Advancement Conditions (RACs) for Private, which requires them to perform the following:</p>
+                                                    <ol>
+                                                        <li>Complete orientation with a member of Officer Corps.
+                                                            <ol class="ml-0">
+                                                                <li>Tags issued: ~R-S9~ until all RACs for Private are complete.</li>
+                                                                <li>Code of Conduct review.</li>
+                                                                <li>Join Steam Group.</li>
+                                                            </ol>
+                                                        </li>
+                                                        <li>Participate in at least one scheduled event / op or a full week of game nights.</li>
+                                                        <li>Apply for promotion and receive approval from Officer Corps.</li>
+                                                        <li>Complete all requirements within 30 days of becoming a Recruit.</li>
+                                                    </ol>
+                                                    <p>In addition to the PO, other members of Officer Corps or Command Staff can take part in facilitating the probation process, as having interactions with multiple members of leadership helps the recruit to integrate better. The main objective is to ensure they will be a good fit for Squad 9.</p>
+                                                    <p>Officer Corps is responsible for tracking a new recruit’s progress during their probation. If a recruit fails to earn promotion or commits an infraction, they will be ejected and have to restart their recruitment from the beginning.  Any recruits found to be hacking will be Blacklisted and issued a permanent ban from the team.</p>
+                                                    <p>Any recruit who is ejected more than twice for reasons other than hacking will be permanently banned.  Once a recruit earns their first promotion, they complete probation and are issued normal ~S9~ tags. </p>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <button class="btn btn-dark btn-lg btn-block py-3 text-left" type="button" data-toggle="collapse" data-target="#returning" aria-expanded="true" aria-controls="returning">
-                                    Returning Members
-                                </button>
-                                <article class="collapse" id="returning">
-                                    <br>
-                                    <h4>Veteran Members</h4>
-                                    <p>Members who previously served in Squad 9 for a period exceeding 1 year are considered veterans and are exempt from having to repeat the recruitment process in order to reenlist.</p>
-                                    <p>Returning veterans must contact a member of Command Staff for approval before they can be reissued tags or roles.</p>
-                                    <h4>Blacklisted Members</h4>
-                                    <p>As of August 2013, Command Staff established the Blacklist as an official record of personnel who were dishonorably discharged for committing severe infractions.  Blacklisted individuals may not rejoin Squad 9 under any circumstances.</p>
-                                </article><br>
+                                    <!-- Returning Members -->
+                                    <div class="card bg-transparent">
+                                        <div class="card-header p-0" id="prereq-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#enlist-return" aria-expanded="true" aria-controls="template">
+                                                Returning Members
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="enlist-return" class="collapse" aria-labelledby="prereq-header" data-parent="#enlist-accordion">
+                                            <div class="card-body px-2">
+                                                <article>
+                                                    <h4>Veteran Members</h4>
+                                                    <p>Members who previously served in Squad 9 for a period exceeding 1 year are considered veterans and are exempt from having to repeat the recruitment process in order to reenlist.</p>
+                                                    <p>Returning veterans must contact a member of Command Staff for approval before they can be reissued tags or roles.</p>
+                                                    <h4>Blacklisted Members</h4>
+                                                    <p>As of August 2013, Command Staff established the Blacklist as an official record of personnel who were dishonorably discharged for committing severe infractions.  Blacklisted individuals may not rejoin Squad 9 under any circumstances.</p>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><br>
+
                                 <h4 class="mb-0">UPDATED ON 10-24-2019</h4>
                                 <p>~S9~ Falcon 197, Commander</p>
                             </div>
@@ -413,266 +432,539 @@
                                     <p>The following ranks are available to all personnel. To earn promotion, members must complete the requirements attached to a specific rank (referred to as <strong>Rank Advancement Conditions</strong> or <strong>RACs</strong>). Some ranks may be awarded through application or appointment by Command Staff.</p>
                                     <p>Prior infractions of the Code of Conduct may be considered grounds for denying promotion to a member. The following will detail the different membership brackets, as well as their appropriate ranks.</p>
 
-                                    <!-- Enlisted Ranks -->
-                                    <button class="btn btn-dark btn-lg btn-block py-3 text-left" type="button" data-toggle="collapse" data-target="#enlisted-ranks" aria-expanded="true" aria-controls="enlisted-ranks">
-                                        Enlisted Members
-                                    </button>
-                                    <article class="collapse" id="enlisted-ranks">
-                                        <br>
-                                        <div class="container-fluid">
+                                    <!-- Ranks Accordion -->
+                                    <div class="accordion" id="ranks-accordion">
 
-                                            <!-- Recruit Rank -->
-                                            <div class="row pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Recruit</h4>
-                                                    <img class="rank-img" src="./images/rank_01_rct.png" alt="Recruit Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Meet all preconditions for membership.
-                                                            <ol type="a">
-                                                                <li>At least 16 years old.</li>
-                                                                <li>Capable of downloading and operating Discord, along with syncing other accounts.</li>
-                                                                <li>Has a VOIP-capable headset for communicating on Discord.</li>
-                                                                <li>Plays at least <strong>one</strong> game Squad 9 currently operates on.</li>
-                                                                <li>Is not part of any other clans or groups requiring a tag.</li>
-                                                            </ol>
-                                                        </li>
-                                                        <li>Submit an enlistment application on the website.</li>
-                                                        <li>Join Squad 9's <a href="https://discord.com/invite/hFAz3f7" target="_blank">Discord</a> and follow the instructions in the #welcome feed.</li>
-                                                    </ol>
-                                                </div>
+                                        <!-- Enlisted Ranks -->
+                                        <div class="card bg-transparent">
+                                            <div class="card-header p-0" id="enlisted-ranks">
+                                                <h2 class="mb-0">
+                                                    <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#ranks-enlisted" aria-expanded="true" aria-controls="template">
+                                                    Enlisted Members
+                                                    </a>
+                                                </h2>
                                             </div>
+                                            <div id="ranks-enlisted" class="collapse" aria-labelledby="template-header" data-parent="#ranks-accordion">
+                                                <div class="card-body px-2">
 
-                                            <!-- Private Rank -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Private</h4>
-                                                    <img class="rank-img" src="./images/rank_02_pvt.png" alt="Private Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Complete orientation with a member of Officer Corps
-                                                            <ol type="a">
-                                                                <li>Tags issued: ~R-S9~ until all RACs for Private are complete</li>
-                                                                <li>Reviewed the Code of Conduct.</li>
-                                                                <li>Joined the <a href="https://steamcommunity.com/groups/squad-9" target="_blank">Steam Group</a>.</li>
-                                                            </ol>
-                                                        </li>
-                                                        <li>Create profile and service record on Barracks.</li>
-                                                        <li>Participate in at least one scheduled event / op or a full week of game nights.</li>
-                                                        <li>Apply for promotion and receive approval from Officer Corps.</li>
-                                                        <li>Complete all requirements within 30 days of becoming a Recruit.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
+                                                    <!-- Rank Shields Container -->
+                                                    <div class="container-fluid px-2">
+                                                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#rct-modal">
+                                                                    <h5 class="text-center">Recruit</h5>
+                                                                    <img class="rank-img" src="./images/rank_01_rct.png" alt="Recruit Rank">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#pvt-modal">
+                                                                    <h5 class="text-center">Private</h5>
+                                                                    <img class="rank-img" src="./images/rank_02_pvt.png" alt="Recruit Rank">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#spc-modal">
+                                                                    <h5 class="text-center">Specialist</h5>
+                                                                    <img class="rank-img" src="./images/rank_03_pfc.png" alt="Recruit Rank">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#cpl-modal">
+                                                                    <h5 class="text-center">Corporal</h5>
+                                                                    <img class="rank-img" src="./images/rank_04_cpl.png" alt="Recruit Rank">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#sgt-modal">
+                                                                    <h5 class="text-center">Sergeant</h5>
+                                                                    <img class="rank-img" src="./images/rank_05_sgt.png" alt="Recruit Rank">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <!-- Specialist Rank -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Specialist</h4>
-                                                    <img class="rank-img" src="./images/rank_03_pfc.png" alt="Specialist Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Add 10 members as friends from Discord, Steam, or on other platforms.</li>
-                                                        <li>Sync Steam and Discord profile names.</li>
-                                                        <li>Study the FNG Guide and participate in an FNG session.</li>
-                                                        <li>Take and pass the FNG test.</li>
-                                                        <li>Acquire at least 1 month of experience as part of a Fireteam.</li>
-                                                        <li>Apply for promotion and receive approval from Officer Corps</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
+                                                    <!-- Recruit Rank Modal -->
+                                                    <div class="modal fade" id="rct-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="rct-label">Recruit</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>The introductory rank to Squad 9's membership. At this rank, you have no responsibilities other than to be as active as you can in the Squad and to follow our Code of Conduct to the best of your abilities.</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Meet all preconditions for membership:
+                                                                            <ol class="pl-3 pl-sm-4" type="a">
+                                                                                <li>At least 16 years old.</li>
+                                                                                <li>Capable of downloading and operating Discord, along with syncing other accounts.</li>
+                                                                                <li>Has a VOIP-capable headset for communicating on Discord.</li>
+                                                                                <li>Plays at least <strong>one</strong> game Squad 9 currently operates on.</li>
+                                                                                <li>Is not part of any other clans or groups requiring a tag.</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>Submit an enlistment application on the website.</li>
+                                                                        <li>Join Squad 9's <a href="https://discord.com/invite/hFAz3f7" target="_blank">Discord</a> and follow the instructions in the #welcome feed.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <!-- Corporal Rank -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3 d-flex flex-column justify-content-center">
-                                                    <h4 class="text-center mb-0">Corporal</h4>
-                                                    <img class="rank-img" src="./images/rank_04_cpl.png" alt="Corporal Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Report to a member of Officer Corps to discuss your team experience, interests, role, and opportunities to best serve the team.</li>
-                                                        <li>Update CSR section on Barracks that tags your skills and interest.</li>
-                                                        <li>Complete THREE of the following:
-                                                            <ol type="a">
-                                                                <li>Briefing—study the ~S9~ Wiki and review guidance on how to interact with the Squad and how our team is organized; Ranks, FTs, Awards, etc.</li>
-                                                                <li>Networking—add 25 additional members as friends from the ~S9~ Discord or other platforms.</li>
-                                                                <li>Assessment—study Squad 9’s history and mythos to learn about who we are and what we’ve accomplished, then complete and pass the History Quiz.</li>
-                                                                <li>CSA—take a Combat Skill Assessment with a member of leadership to test your skills.</li>
-                                                            </ol>
-                                                        </li>
-                                                        <li>Complete an official training session.</li>
-                                                        <li>Acquire at least 2 additional months of experience as part of a Fireteam.</li>
-                                                        <li>Apply for promotion and receive approval from Officer Corps.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
+                                                    <!-- Private Rank Modal -->
+                                                    <div class="modal fade" id="pvt-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="pvt-label">Private</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>The rank attained upon successfully clearing your probation and being inducted fully into Squad 9. As before, your responsibilities are to be as active as possible and follow the Code. However, your opportunities within Squad 9 will begin to open up as you further your career in our community.</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Complete orientation with a member of Officer Corps
+                                                                            <ol class="pl-3 pl-sm-4" type="a">
+                                                                                <li>Tags issued: ~R-S9~ until all RACs for Private are complete</li>
+                                                                                <li>Reviewed the Code of Conduct.</li>
+                                                                                <li>Joined the <a href="https://steamcommunity.com/groups/squad-9" target="_blank">Steam Group</a>.</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>Create profile and service record on Barracks.</li>
+                                                                        <li>Participate in at least one scheduled event / op or a full week of game nights.</li>
+                                                                        <li>Apply for promotion and receive approval from Officer Corps.</li>
+                                                                        <li>Complete all requirements within 30 days of becoming a Recruit.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <!-- Sergeant Rank -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3 d-flex flex-column justify-content-center">
-                                                    <h4 class="text-center mb-0">Sergeant</h4>
-                                                    <img class="rank-img" src="./images/rank_05_sgt.png" alt="Corporal Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Referred at least 5 people to join Squad 9.</li>
-                                                        <li>Completed an Integrated Member Certification (IMC) exam, which tests knowledge of the Squad, its history, vision, protocols, operations, ensures the member has substantial team knowledge, and ensures they're better equipped to participate and to lead.</li>
-                                                        <li>Has acquired at least 3 additional months of experience as part of a Fireteam.</li>
-                                                        <li>Apply for promotion and complete a special briefing with Command Staff to discuss IMC results and team experience, as well as explore opportunities for additional advancement into FTs, Moderator Unit, or Officer Corps.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article><br>
+                                                    <!-- Specialist Rank Modal -->
+                                                    <div class="modal fade" id="spc-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="spc-label">Specialist</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>[Description TBD]</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Add 10 members as friends from Discord, Steam, or on other platforms.</li>
+                                                                        <li>Sync Steam and Discord profile names.</li>
+                                                                        <li>Study the FNG Guide and participate in an FNG session.</li>
+                                                                        <li>Take and pass the FNG test.</li>
+                                                                        <li>Acquire at least 1 month of experience as part of a Fireteam.</li>
+                                                                        <li>Apply for promotion and receive approval from Officer Corps</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                    <!-- Support Roles -->
-                                    <button class="btn btn-dark btn-lg btn-block py-3 text-left" type="button" data-toggle="collapse" data-target="#support-roles" aria-expanded="true" aria-controls="enlisted-ranks">
-                                        Support Roles
-                                    </button>
-                                    <article class="collapse" id="support-roles">
-                                        <br>
-                                        <div class="container-fluid">
+                                                    <!-- Corporal Rank Modal -->
+                                                    <div class="modal fade" id="cpl-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="cpl-label">Corporal</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>[Description TBD]</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Report to a member of Officer Corps to discuss your team experience, interests, role, and opportunities to best serve the team.</li>
+                                                                        <li>Update CSR section on Barracks that tags your skills and interest.</li>
+                                                                        <li>Complete THREE of the following:
+                                                                            <ol class="pl-3 pl-sm-4" type="a">
+                                                                                <li>Briefing—study the ~S9~ Wiki and review guidance on how to interact with the Squad and how our team is organized; Ranks, FTs, Awards, etc.</li>
+                                                                                <li>Networking—add 25 additional members as friends from the ~S9~ Discord or other platforms.</li>
+                                                                                <li>Assessment—study Squad 9’s history and mythos to learn about who we are and what we’ve accomplished, then complete and pass the History Quiz.</li>
+                                                                                <li>CSA—take a Combat Skill Assessment with a member of leadership to test your skills.</li>
+                                                                            </ol>
+                                                                        </li>
+                                                                        <li>Complete an official training session.</li>
+                                                                        <li>Acquire at least 2 additional months of experience as part of a Fireteam.</li>
+                                                                        <li>Apply for promotion and receive approval from Officer Corps.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <!-- Moderator Role -->
-                                            <div class="row pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Moderator</h4>
-                                                    <img class="rank-img" src="./images/rank_06a_mod.png" alt="Recruit Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Attained the rank of Sergeant.</li>
-                                                        <li>No recorded infractions within the last 6 months or active Red Flag status.</li>
-                                                        <li>Receive nomination by a member of Officer Corps in Server Ops.</li>
-                                                        <li>Apply for the rank and complete the application and orientation process.</li>
-                                                        <li>Qualify for the role based on successful completion of training.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
+                                                    <!-- Sergeant Rank Modal -->
+                                                    <div class="modal fade" id="sgt-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="sgt-label">Sergeant</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>[Description TBD]</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Referred at least 5 people to join Squad 9.</li>
+                                                                        <li>Completed an Integrated Member Certification (IMC) exam, which tests knowledge of the Squad, its history, vision, protocols, operations, ensures the member has substantial team knowledge, and ensures they're better equipped to participate and to lead.</li>
+                                                                        <li>Has acquired at least 3 additional months of experience as part of a Fireteam.</li>
+                                                                        <li>Apply for promotion and complete a special briefing with Command Staff to discuss IMC results and team experience, as well as explore opportunities for additional advancement into FTs, Moderator Unit, or Officer Corps.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <!-- Recruiter Role -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Recruiter</h4>
-                                                    <img class="rank-img" src="./images/rank_06c_rctr.png" alt="Recruiter Role">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Attain the rank of Corporal or higher.</li>
-                                                        <li>No recorded infractions within the last 6 months or active Red Flag status.</li>
-                                                        <li>Receive nomination by a member of Officer Corps in Server Ops.</li>
-                                                        <li>Apply for the rank and complete the application and orientation process.</li>
-                                                        <li>Qualify for the role based on successful completion of training.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-
-                                            <!-- Fireteam Leader Role -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Fireteam Leader</h4>
-                                                    <img class="rank-img" src="./images/rank_06b_ftl.png" alt="Specialist Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Attain the rank of Specialist or higher.</li>
-                                                        <li>Establish a Fireteam by performing the steps outlined in Squad 9's Fireteam Protocols.</li>
-                                                        <li>Receive nomination by a majority of Fireteam members.</li>
-                                                        <li>Report to Command Staff for final approvals and orientation.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article><br>
-
-                                    <!-- Officer Corps Ranks -->
-                                    <button class="btn btn-dark btn-lg btn-block py-3 text-left" type="button" data-toggle="collapse" data-target="#officer-ranks" aria-expanded="true" aria-controls="officer-ranks">
-                                        Officer Corps
-                                    </button>
-                                    <article class="collapse" id="officer-ranks">
-                                        <br>
-                                        <div class="container-fluid">
-
-                                            <!-- Lieutenant Rank -->
-                                            <div class="row pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Lieutenant</h4>
-                                                    <img class="rank-img" src="./images/rank_07_lt.png" alt="Recruit Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Attain the rank of Sergeant.</li>
-                                                        <li>No recorded infractions.</li>
-                                                        <li>At least 1 year of service in the Squad or 6 months prior leadership experience (service in a Support Role counts).</li>
-                                                        <li>Receive joint nomination from a member of Officer Corps and Command Staff.</li>
-                                                        <li>Apply for the rank and complete the application and orientation process.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-
-                                            <!-- Captain Rank -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Captain</h4>
-                                                    <img class="rank-img" src="./images/rank_08_cpt.png" alt="Recruiter Role">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Serve in Officer Corps as a Lieutenant for one year or longer.</li>
-                                                        <li>No recorded infractions.</li>
-                                                        <li>Demonstrate willingness and capability to serve as the head of a Department in Officer Corps.</li>
-                                                        <li>Receive approval from all members of Command Staff.</li>
-                                                        <li>Apply for the rank and complete the application and orientation process.</li>
-                                                    </ol>
                                                 </div>
                                             </div>
                                         </div>
-                                    </article><br>
 
-                                    <!-- Command Staff Ranks -->
-                                    <button class="btn btn-dark btn-lg btn-block py-3 text-left" type="button" data-toggle="collapse" data-target="#command-ranks" aria-expanded="true" aria-controls="command-ranks">
-                                        Command Staff
-                                    </button>
-                                    <article class="collapse" id="command-ranks">
-                                        <br>
-                                        <div class="container-fluid">
-
-                                            <!-- Major Rank -->
-                                            <div class="row pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Major</h4>
-                                                    <img class="rank-img" src="./images/rank_09_maj.png" alt="Major Rank">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Appointed by Commanding Officer.</li>
-                                                        <li>Prior service in Officer Corps required.</li>
-                                                    </ol>
-                                                </div>
+                                        <!-- Support Roles -->
+                                        <div class="card bg-transparent">
+                                            <div class="card-header p-0" id="support-ranks">
+                                                <h2 class="mb-0">
+                                                    <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#ranks-support" aria-expanded="true" aria-controls="template">
+                                                    Support Roles
+                                                    </a>
+                                                </h2>
                                             </div>
+                                            <div id="ranks-support" class="collapse" aria-labelledby="template-header" data-parent="#ranks-accordion">
+                                                <div class="card-body px-2">
 
-                                            <!-- Captain Rank -->
-                                            <div class="row mt-3 pb-3">
-                                                <div class="col-sm-3">
-                                                    <h4 class="text-center mb-0">Colonel</h4>
-                                                    <img class="rank-img" src="./images/rank_10_col.png" alt="Recruiter Role">
-                                                </div>
-                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
-                                                    <ol class="pl-0 pl-sm-3">
-                                                        <li>Nomination by outgoing Commanding Officer or election by Officer Corps.</li>
-                                                        <li>Requires approval by majority of Command Staff and Officer Corps.</li>
-                                                    </ol>
+                                                    <!-- Rank Shields Container -->
+                                                    <div class="container-fluid px-2">
+                                                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#mod-modal">
+                                                                    <h5 class="text-center">Moderator</h5>
+                                                                    <img class="rank-img" src=".\images\rank_06a_mod.png" alt="Moderator Role">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#rec-modal">
+                                                                    <h5 class="text-center">Recruiter</h5>
+                                                                    <img class="rank-img" src=".\images\rank_06c_rec.png" alt="Recruit Rank">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#ftl-modal">
+                                                                    <h5 class="text-center">Fireteam Leader</h5>
+                                                                    <img class="rank-img" src=".\images\rank_06b_ftl.png" alt="Recruit Rank">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Moderator Modal -->
+                                                    <div class="modal fade" id="mod-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="mod-label">Moderator</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>An administrative role, Moderators are responsible for assisting our Leadership in ensuring stability in our Discord as well as any and all game servers we may have.</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Attained the rank of Sergeant.</li>
+                                                                        <li>No recorded infractions within the last 6 months or active Red Flag status.</li>
+                                                                        <li>Receive nomination by a member of Officer Corps in Server Ops.</li>
+                                                                        <li>Apply for the rank and complete the application and orientation process.</li>
+                                                                        <li>Qualify for the role based on successful completion of training.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Recruiter Modal -->
+                                                    <div class="modal fade" id="rec-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="rec-label">Recruiter</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>Dedicated toward helping Squad 9 bring in more people as well as process and orient them, Recruiters are meant to supplement the Recruiting Department.</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Attain the rank of Corporal or higher.</li>
+                                                                        <li>No recorded infractions within the last 6 months or active Red Flag status.</li>
+                                                                        <li>Receive nomination by a member of Officer Corps in Server Ops.</li>
+                                                                        <li>Apply for the rank and complete the application and orientation process.</li>
+                                                                        <li>Qualify for the role based on successful completion of training.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Fireteam Leader Modal -->
+                                                    <div class="modal fade" id="ftl-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="ftl-label">Fireteam Leader</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>One of our most prestigious roles, the Fireteam Leader is placed in charge of one of our Fireteams.</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Attain the rank of Specialist or higher.</li>
+                                                                        <li>Establish a Fireteam by performing the steps outlined in Squad 9's Fireteam Protocols.</li>
+                                                                        <li>Receive nomination by a majority of Fireteam members.</li>
+                                                                        <li>Report to Command Staff for final approvals and orientation.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
-                                    </article>
 
-                                    <br>
+                                        <!-- Officer Corps -->
+                                        <div class="card bg-transparent">
+                                            <div class="card-header p-0" id="officer-ranks">
+                                                <h2 class="mb-0">
+                                                    <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#ranks-officer" aria-expanded="true" aria-controls="template">
+                                                    Officer Corps
+                                                    </a>
+                                                </h2>
+                                            </div>
+                                            <div id="ranks-officer" class="collapse" aria-labelledby="template-header" data-parent="#ranks-accordion">
+                                                <div class="card-body px-2">
+
+                                                    <!-- Rank Shields Container -->
+                                                    <div class="container-fluid px-2">
+                                                        <div class="row row-cols-1 row-cols-sm-2">
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#lt-modal">
+                                                                    <h5 class="text-center">Lieutenant</h5>
+                                                                    <img class="rank-img" src=".\images\rank_07_lt.png" alt="Lieutenant Rank">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#cpt-modal">
+                                                                    <h5 class="text-center">Captain</h5>
+                                                                    <img class="rank-img" src=".\images\rank_08_cpt.png" alt="Captain Rank">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Lieutenant Modal -->
+                                                    <div class="modal fade" id="lt-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="exampleModalLabel">Lieutenant</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>[Description TBD]</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Attain the rank of Sergeant.</li>
+                                                                        <li>Have no recorded infractions on your record.</li>
+                                                                        <li>At least <strong>one year</strong> of active service in Squad 9 or <strong> six months</strong> prior leadership experience. Being in a Support Role counts.</li>
+                                                                        <li>Receive joint nomination from a member of Officer Corps and Command Staff.</li>
+                                                                        <li>Apply for the rank and complete the application and orientation process.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Captain Modal -->
+                                                    <div class="modal fade" id="cpt-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="exampleModalLabel">Captain</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>[Description TBD]</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Serve in Officer Corps as a Lieutenant for <strong>one year or longer</strong>.</li>
+                                                                        <li>No recorded infractions.</li>
+                                                                        <li>Demonstrate willingness and capability to serve as the head of a Department in Officer Corps.</li>
+                                                                        <li>Receive approval from all members of Command Staff.</li>
+                                                                        <li>Apply for the rank and complete the application and orientation process.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Command Staff -->
+                                        <div class="card bg-transparent">
+                                            <div class="card-header p-0" id="officer-ranks">
+                                                <h2 class="mb-0">
+                                                    <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#ranks-command" aria-expanded="true" aria-controls="template">
+                                                    Command Staff
+                                                    </a>
+                                                </h2>
+                                            </div>
+                                            <div id="ranks-command" class="collapse" aria-labelledby="template-header" data-parent="#ranks-accordion">
+                                                <div class="card-body px-2">
+
+                                                    <!-- Rank Shields Container -->
+                                                    <div class="container-fluid px-2">
+                                                        <div class="row row-cols-1 row-cols-sm-2">
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#maj-modal">
+                                                                    <h5 class="text-center">Major</h5>
+                                                                    <img class="rank-img" src=".\images\rank_09_maj.png" alt="Lieutenant Rank">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col mb-3 mb-xl-0 px-2">
+                                                                <button class="img-btn" data-toggle="modal" data-target="#col-modal">
+                                                                    <h5 class="text-center">Colonel</h5>
+                                                                    <img class="rank-img" src=".\images\rank_10_col.png" alt="Captain Rank">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Major Modal -->
+                                                    <div class="modal fade" id="maj-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="exampleModalLabel">Major</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>[Description TBD]</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Appointed by Commanding Officer.</li>
+                                                                        <li>Prior service in Officer Corps required.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Colonel Modal -->
+                                                    <div class="modal fade" id="col-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                            <div class="modal-content justify-content-center">
+                                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                                    <h2 class="modal-title" id="exampleModalLabel">Colonel</h2>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body bg-darkest">
+                                                                    <p>[Description TBD]</p>
+                                                                    <ol class="pl-3 pl-sm-4">
+                                                                        <li>Nomination by outgoing Commanding Officer or election by Officer Corps.</li>
+                                                                        <li>Requires approval by majority of Command Staff and Officer Corps.</li>
+                                                                    </ol>
+                                                                </div>
+                                                                <div class="modal-footer bg-darker">
+                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <article>
+                                                        <div class="container-fluid">
+
+                                                            <!-- Major Rank -->
+                                                            <!-- <div class="row pb-3">
+                                                                <div class="col-sm-3">
+                                                                    <h4 class="text-center mb-0">Major</h4>
+                                                                    <img class="rank-img" src="./images/rank_09_maj.png" alt="Major Rank">
+                                                                </div>
+                                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
+                                                                    <ol class="pl-0 pl-sm-3">
+                                                                        <li>Appointed by Commanding Officer.</li>
+                                                                        <li>Prior service in Officer Corps required.</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div> -->
+
+                                                            <!-- Captain Rank -->
+                                                            <!-- <div class="row mt-3 pb-3">
+                                                                <div class="col-sm-3">
+                                                                    <h4 class="text-center mb-0">Colonel</h4>
+                                                                    <img class="rank-img" src="./images/rank_10_col.png" alt="Recruiter Role">
+                                                                </div>
+                                                                <div class="col-sm-9 mt-3 mt-sm-0 d-flex flex-column align-items-start justify-content-center">
+                                                                    <ol class="pl-0 pl-sm-3">
+                                                                        <li>Nomination by outgoing Commanding Officer or election by Officer Corps.</li>
+                                                                        <li>Requires approval by majority of Command Staff and Officer Corps.</li>
+                                                                    </ol>
+                                                                </div>
+                                                            </div> -->
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><br>
                                     <h4 class="mb-0">Updated on 10 / 24 / 2019</h4>
-                                    <p>~S9~ Falcon 197, Commander </p>
+                                    <p>~S9~ Falcon 197, Commander</p>
                                 </article>
                             </div>
                         </div>
@@ -835,7 +1127,7 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="awards-body" class="collapse show" aria-labelledby="body" data-parent="#wiki">
+                        <div id="awards-body" class="collapse" aria-labelledby="body" data-parent="#wiki">
                             <div class="card-body">
                                 <h4>Overview</h4>
                                 <h5>"Quid Pro Quo."</h5>
@@ -894,7 +1186,8 @@
                         </div>
                         <div id="alliances-body" class="collapse" aria-labelledby="body" data-parent="#wiki">
                             <div class="card-body">
-                                <h4>Overview: "All for one, one for all!"</h4>
+                                <h4>Overview</h4>
+                                <h5>"All for one, one for all!"</h5>
                                 <p>Alliances may be created between Squad 9 and affiliated groups or individuals according to the following conditions.</p>
                                 <br>
                                 <h5>Alliance Formation</h5>
@@ -950,6 +1243,30 @@
                         <div id="template-template" class="collapse" aria-labelledby="template-header" data-parent="#template-accordion">
                             <div class="card-body px-2">
                                 
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Modal Template (w/button trigger) -->
+                <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                </button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content justify-content-center">
+                            <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                <h2 class="modal-title" id="exampleModalLabel">Modal title</h2>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body bg-darkest">
+                            ...
+                            </div>
+                            <div class="modal-footer bg-darker">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>

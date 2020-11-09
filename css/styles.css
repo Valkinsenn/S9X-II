@@ -292,6 +292,10 @@ Buttons
     border-color: transparent;
 }
 
+.btn-small {
+    font-size: 1.5rem;
+}
+
 .music-player {
     background: transparent;
     border: none;

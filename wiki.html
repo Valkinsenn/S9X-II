@@ -1127,12 +1127,192 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="awards-body" class="collapse" aria-labelledby="body" data-parent="#wiki">
+                        <div id="awards-body" class="collapse show" aria-labelledby="body" data-parent="#wiki">
                             <div class="card-body">
                                 <h4>Overview</h4>
                                 <h5>"Quid Pro Quo."</h5>
                                 <p>Awards are available to all Squad members. Awards may only be issued if a member receives nomination from a member of Officer Corps or Command Staff, or applies for and completes a tryout. Infractions of the Code of Conduct may result in a loss of awards.</p>
-                                
+                                <div class="accordion" id="awards-accordion">
+
+                                    <!-- Distinguished Awards -->
+                                    <div class="card bg-transparent">
+                                        <div class="card-header p-0" id="dist-awards-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#dist-awards" aria-expanded="true" aria-controls="template">
+                                                Distinguished Awards
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="dist-awards" class="collapse show" aria-labelledby="template-header" data-parent="#awards-accordion">
+                                            <div class="card-body px-2">
+                                                <div class="container-fluid px-2">
+                                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                                                        <div class="col mb-3 mb-xl-0 px-2">
+                                                            <button class="img-btn" data-toggle="modal" data-target="#dist-moh">
+                                                                <h5 class="text-center">Squad 9<br>Medal of Honor</h5>
+                                                                <img class="rank-img" src=".\images\medals\dist_01_moh.png" alt="Recruit Rank">
+                                                            </button>
+                                                        </div>
+                                                        <div class="col mb-3 mb-xl-0 px-2">
+                                                            <button class="img-btn" data-toggle="modal" data-target="#dist-unit">
+                                                                <h5 class="text-center">Unit Commendation</h5>
+                                                                <img class="rank-img" src=".\images\medals\dist_02_unitcomm.png" alt="Recruit Rank">
+                                                            </button>
+                                                        </div>
+                                                        <div class="col mb-3 mb-xl-0 px-2">
+                                                            <button class="img-btn" data-toggle="modal" data-target="#dist-order">
+                                                                <h5 class="text-center">Order of the Squad</h5>
+                                                                <img class="rank-img" src=".\images\medals\dist_03_order.png" alt="Recruit Rank">
+                                                            </button>
+                                                        </div>
+                                                        <div class="col mb-3 mb-xl-0 px-2">
+                                                            <button class="img-btn" data-toggle="modal" data-target="#dist-off">
+                                                                <h5 class="text-center">Officer Commendation</h5>
+                                                                <img class="rank-img" src=".\images\medals\dist_04_offcomm.png" alt="Recruit Rank">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Medal of Honor Modal -->
+                                    <div class="modal fade" id="dist-moh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                            <div class="modal-content justify-content-center">
+                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                    <h2 class="modal-title" id="exampleModalLabel">Squad 9 Medal of Honor</h2>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body bg-darkest">
+                                                <p>Exceed all expectations for valor and virtue. Follow the Code of Conduct as if you yourself had written it. Set the example for excellence and discipline, and accomplish extraordinary feats that have a lasting impact. This is the ultimate award in Squad 9 and eligibility requires at least one year of service in the team.</p>
+                                                <h4 class="mb-0">Awarded to:</h4>
+                                                <p>N/A</p>
+                                                </div>
+                                                <div class="modal-footer bg-darker">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Unit Commendation Modal -->
+                                    <div class="modal fade" id="dist-unit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                            <div class="modal-content justify-content-center">
+                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                    <h2 class="modal-title" id="exampleModalLabel">Unit Commendation Medal</h2>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body bg-darkest">
+                                                <p>Earn the unanimous consent of the members of Squad 9 to receive recognition for long term service to the unit.  To be eligible for such an honor, you must have been active in Squad 9 and dedicated significant time and effort towards fulfilling your duty and the goals of the team.  This is a rarely given award and bears the prestige of a career devoted to service above self.</p>
+                                                <h4 class="mb-0">Awarded to:</h4>
+                                                <p>N/A</p>
+                                                </div>
+                                                <div class="modal-footer bg-darker">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Order of the Squad Modal -->
+                                    <div class="modal fade" id="dist-order" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                            <div class="modal-content justify-content-center">
+                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                    <h2 class="modal-title" id="exampleModalLabel">Order of the Squad</h2>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body bg-darkest">
+                                                <p>Regularly conduct yourself in a fashion that is consistent with the 9 Points in the Code of Conduct.  This award is also given to those who accomplish a task of heroic nature in the Squad.</p>
+                                                <h4 class="mb-0">Awarded to:</h4>
+                                                <p>Valkinsenn</p>
+                                                </div>
+                                                <div class="modal-footer bg-darker">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Officer Commendation Modal -->
+                                    <div class="modal fade" id="dist-off" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                            <div class="modal-content justify-content-center">
+                                                <div class="modal-header bg-darker d-flex align-items-center pr-4">
+                                                    <h2 class="modal-title" id="exampleModalLabel">Officer Commendation</h2>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body bg-darkest">
+                                                <p>Excel at your duty as an officer of Squad 9. Assume responsibilities beyond your usual assigned tasks and accomplish more than is expected while abiding by the 9 Points of the Code of Conduct. Consistently encourage unity within the team and aid in its leadership.</p>
+                                                <h4 class="mb-0">Awarded to:</h4>
+                                                <p>Bagdadd, Obrim, Valkinsenn, Xenos</p>
+                                                </div>
+                                                <div class="modal-footer bg-darker">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- General Awards -->
+                                    <div class="card bg-transparent">
+                                        <div class="card-header p-0" id="gen-awards-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#service-awards" aria-expanded="true" aria-controls="template">
+                                                Service Awards
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="service-awards" class="collapse" aria-labelledby="template-header" data-parent="#awards-accordion">
+                                            <div class="card-body px-2">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Combat Awards -->
+                                    <div class="card bg-transparent">
+                                        <div class="card-header p-0" id="gen-awards-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#combat-awards" aria-expanded="true" aria-controls="template">
+                                                Combat Awards
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="combat-awards" class="collapse" aria-labelledby="template-header" data-parent="#awards-accordion">
+                                            <div class="card-body px-2">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Fireteam Awards -->
+                                    <div class="card bg-transparent">
+                                        <div class="card-header p-0" id="ft-awards-header">
+                                            <h2 class="mb-0">
+                                                <a class="btn btn-link btn-small btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#ft-awards" aria-expanded="true" aria-controls="template">
+                                                Fireteam Awards
+                                                </a>
+                                            </h2>
+                                        </div>
+                                        <div id="ft-awards" class="collapse" aria-labelledby="template-header" data-parent="#awards-accordion">
+                                            <div class="card-body px-2">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1284,7 +1464,7 @@
                 </h2>
                 <h5 style="margin-top: -.5rem;" class="text-center">For honor and glory</h5>
             </div>
-            <div class="col-md-6 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-md-end pb-2 pb-md-0">
+            <div class="col-md-6 col-lg-5 col-xl-4 d-flex justify-content-center justify-content-md-end align-items-center pb-2 pb-md-0">
                 <a href="https://steamcommunity.com/groups/squad-9" target="_blank"><img src="./images/icons_steam.png" alt="Steam Group" class="official-link steam"></a>
 
                 <a href="https://go.twitch.tv/squad9gaming" class="ml-2" target="_blank"><img src="./images/icons_twitch.png" alt="Twitch Icon" class="official-link twitch"></a>

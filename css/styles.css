@@ -41,7 +41,9 @@ Color Variables
     --footer-bg-2: hsl(0, 0%, 10%);
     --header-text-color: hsl(0, 0%, 95%);
     --navbar-bg-color: hsla(0, 0%, 0%, 85%);
-    --navlink-hover-color: hsla(210, 50%, 50%, 25%);
+    --navlink-hover-color: hsla(197, 65%, 50%, 15%);
+    --navlink-hover-shadow-color: hsl(185, 65%, 50%);
+    --subheader-text-color: hsl(185, 65%, 50%);
 }
 
 /* ==============================
@@ -53,7 +55,6 @@ Layout
 
 body {
     background-attachment: fixed;
-    /* background-image: url("/images/main_bg.jpg"); */
     background-color: var(--body-bg);
     background-position: center;
     background-size: cover;
@@ -155,7 +156,7 @@ Images
 }
 
 .team-img {
-    height: 250px;
+    max-height: 250px;
     object-fit: cover;
     width: 100%;
 }
@@ -211,9 +212,14 @@ h1 {
     font-size: 3rem;
 }
 
+h2 {
+    font-size: 2.4rem;
+}
+
 h4, h5, h6 {
-    color: var(--header-text-color);
+    color: var(--subheader-text-color);
     font-family: var(--subheader-font);
+    letter-spacing: .1rem;
 }
 
 p {
@@ -368,7 +374,7 @@ Buttons
     font-size: 1.2rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    transition: background-color .2s, box-shadow .2s;
+    transition: background-color .2s, box-shadow .4s;
 }
 
 .donate-button {
@@ -416,7 +422,7 @@ Buttons
 @media screen and (min-width: 576px) {
     .nav-link:hover, .navbar-brand:hover, .music-player:hover {
         background-color: var(--navlink-hover-color);
-        box-shadow: 0 3px white;
+        box-shadow: 0 3px var(--navlink-hover-shadow-color);
     }
 }
 
@@ -446,6 +452,10 @@ Modals
 
 .modal-content {
     background-color: transparent;
+}
+
+.modal-body {
+    padding-bottom: .2rem;
 }
 
 .close {

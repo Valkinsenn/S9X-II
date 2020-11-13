@@ -37,13 +37,13 @@ Color Variables
     --body-text-color-2: white;
     --btn-link-hover-color: hsl(210, 65%, 50%);
     --btn-dark-bg-color: hsl(0, 0%, 20%);
-    --footer-bg-1: hsl(0, 0%, 15%);
+    --footer-bg-1: hsl(205, 35%, 13%);
     --footer-bg-2: hsl(0, 0%, 10%);
     --header-text-color: hsl(0, 0%, 95%);
     --navbar-bg-color: hsla(0, 0%, 0%, 85%);
     --navlink-hover-color: hsla(197, 65%, 50%, 15%);
-    --navlink-hover-shadow-color: hsl(185, 65%, 50%);
-    --subheader-text-color: hsl(185, 65%, 50%);
+    --navlink-hover-shadow-color: hsl(197, 65%, 50%);
+    --subheader-text-color: hsl(197, 65%, 50%);
 }
 
 /* ==============================
@@ -176,12 +176,49 @@ Images
     width: 100%;
 }
 
+.lattice-grid-1 {
+    background-image: url("/images/loops/loop_lattice-grid-1.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.lattice-grid-2 {
+    background-image: url("/images/loops/loop_lattice-grid-2.png");
+    background-position: center;
+    opacity: .65;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 2;
+}
+
 @media screen and (min-width: 576px) {
     .rank-img {
         max-height: 210px;
         object-fit: contain;
         width: 100%;
     }
+}
+
+/* ==============================
+Video
+============================== */
+.backing-plate {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    z-index: -100;
+}
+
+.bg-video {
+    filter: blur(10px) brightness(65%);
+    left: 0; top: 0;
+    object-fit: cover;
+    position: absolute;
+    width: 100vw; height: 100vh;
 }
 
 /* ==============================
@@ -195,6 +232,7 @@ body {
     color: var(--body-text-color);
     font-family: var(--body-font);
     font-size: .9rem;
+    text-shadow: 0 2px 5px black;
 }
 
 h1, h2, h3 {
@@ -307,6 +345,7 @@ Buttons
     border-radius: 5px;
     background: hsl(0, 0%, 15%);
     /* filter: grayscale(1); */
+    height: 100%;
     padding: .75rem .5rem;
     transition: box-shadow .2s, transform .2s;
     width: 100%;
@@ -431,13 +470,9 @@ Horizontal Rules
 ============================== */
 .main-hor-rule {
     background-color: transparent;
-    background-image: linear-gradient(to right, transparent, white, transparent);
+    background-image: linear-gradient(to right, transparent, var(--navlink-hover-shadow-color), transparent);
     height: 1px;
 }
-
-/* ==============================
-Accordions
-============================== */
 
 /* ==============================
 Modals

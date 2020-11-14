@@ -42,8 +42,8 @@ Color Variables
     --header-text-color: hsl(0, 0%, 95%);
     --navbar-bg-color: hsla(0, 0%, 0%, 85%);
     --navlink-hover-color: hsla(197, 65%, 50%, 15%);
-    --navlink-hover-shadow-color: hsl(197, 65%, 50%);
-    --subheader-text-color: hsl(197, 65%, 50%);
+    --navlink-hover-shadow-color: hsl(197, 65%, 55%);
+    --subheader-text-color: hsl(197, 65%, 55%);
 }
 
 /* ==============================
@@ -144,6 +144,10 @@ Images
     color: white;
 }
 
+.container-bg-3 {
+    background-image: url("/images/smoke-bg.jpg");
+}
+
 .backing-image-1 {
     background-attachment: fixed;
     background-image: url("/images/main_bg.jpg");
@@ -153,6 +157,13 @@ Images
     left: 0; top: 0;
     width: 100vw; height: 100vh;
     z-index: -100;
+}
+
+.container-bg-fade {
+    background-image: linear-gradient(to right, transparent, hsla(0, 0%, 0%, 50%), transparent);
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%; height: 100%;
 }
 
 .team-img {
@@ -207,6 +218,7 @@ Images
 Video
 ============================== */
 .backing-plate {
+    background: black;
     position: fixed;
     left: 0; top: 0;
     width: 100vw; height: 100vh;
@@ -366,7 +378,7 @@ Buttons
     border: none;
     filter: brightness(.65);
     outline: none;
-    transition: background-color .2s;
+    transition: background-color .2s, box-shadow .4s;
 }
 
 .music-player:hover {
@@ -399,7 +411,7 @@ Buttons
     font-size: 1.2rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    transition: background-color .2s, box-shadow .2s;
+    transition: background-color .2s, box-shadow .4s;
     /* -webkit-filter: brightness(.6); */
 }
 
@@ -472,6 +484,13 @@ Horizontal Rules
     background-color: transparent;
     background-image: linear-gradient(to right, transparent, var(--navlink-hover-shadow-color), transparent);
     height: 1px;
+}
+
+/* ==============================
+Containers
+============================== */
+.container-fluid {
+    position: relative;
 }
 
 /* ==============================

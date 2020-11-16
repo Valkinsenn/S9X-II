@@ -31,15 +31,15 @@
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0">
         <div class="container">
-            <a href="./index.html" class="navbar-brand d-flex align-items-center py-3 px-0 px-md-3 mr-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9xnavbar" aria-controls="s9xnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="./index.html" class="navbar-brand d-flex align-items-center py-3 px-0 px-md-3 mx-auto">
                 <img src="./images/s9logo.png" alt="Squad 9 Warhawk"  class="navbar-brand-logo mr-2">
                 <span class="d-none d-md-block">Squad 9 Gaming</span>
             </a>
-            <button class="music-player ml-auto mr-2 px-3 d-sm-none" onclick="playPause()">
+            <button class="music-player px-3 d-sm-none" onclick="playPause()">
                 <div id="playPauseSmall" class="pause"></div>
-            </button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9xnavbar" aria-controls="s9xnavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="s9xnavbar">
@@ -48,10 +48,10 @@
                     <a href="#" class="nav-link active px-3 py-3">History</a>
                     <a href="./wiki.html" class="nav-link px-3 py-3">Wiki</a>
                     <a href="#" class="nav-link px-3 py-3">Store</a>
+                    <a href="./joinus.html" class="nav-link px-3 py-3">Join</a>
                     <!-- <a href="#" class="nav-link px-3 py-3">Barracks</a> -->
                 </div>
                 <span class="navbar-nav ml-auto">
-                    <a href="./joinus.html" class="nav-link px-3 py-3">Join</a>
                     <!-- <a href="./loginpage.html" class="nav-link px-3 py-3">Login</a> -->
                     <button class="music-player px-3 py-3 d-none d-sm-block" onclick="playPause()">
                         <div id="playPause" class="pause"></div>
@@ -72,7 +72,7 @@
                 <img src="./images/history_img.jpg" alt="Squad 9 History Image" class="history-img">
                 <h1 class="text-center mt-5">The history of Squad 9</h1>
                 <hr class="main-hor-rule">
-                <p class="text-center">Click one of the sections below to read up on different eras of Squad 9's history.</p>
+                <p class="text-center mb-5">Click one of the sections below to read up on different eras of Squad 9's history.</p>
             </div>
         </div>
 
@@ -82,18 +82,19 @@
                 <!-- History Accordion -->
                 <div class="accordion" id="history-accordion">
 
-                    <!-- Card #1: The Formative Years -->
+                    <!-- Card #1: Formation -->
                     <div class="card">
                         <div class="card-header" id="formation-header">
                             <h2 class="mb-0">
-                                <a class="btn btn-link btn-block pl-0 text-left" type="button" data-toggle="collapse" data-target="#formation-body" aria-expanded="true" aria-controls="template">
-                                2003 - 2006: The Formative Years
+                                <a class="btn btn-link btn-block pl-4 py-3 text-left" type="button" data-toggle="collapse" data-target="#formation-body" aria-expanded="true" aria-controls="template">
+                                Formation
                                 </a>
                             </h2>
                         </div>
                         <div id="formation-body" class="collapse show" aria-labelledby="formation-header" data-parent="#history-accordion">
                             <div class="card-body">
-                                <p>These are Squad 9's earliest years, when its first and oldest members coalesced into the initial version of the group it is today.</p>
+                                <h3>2003 - 2006</h3>
+                                <p>Squad 9's earliest years, when its first and oldest members coalesced into the initial version of the group it is today.</p>
 
                                 <!-- The Formative Years Accordion -->
                                 <div class="accordion" id="formation-accordion">
@@ -140,17 +141,18 @@
                         </div>
                     </div>
 
-                    <!-- Card #2: Initial Shaping -->
+                    <!-- Card #2: Shaping the Mold -->
                     <div class="card">
                         <div class="card-header" id="shaping-header">
                             <h2 class="mb-0">
-                                <a class="btn btn-link btn-block pl-0 text-left" type="button" data-toggle="collapse" data-target="#shaping-body" aria-expanded="true" aria-controls="template">
-                                2006 - 2009: Initial Shaping
+                                <a class="btn btn-link btn-block pl-4 py-3 text-left" type="button" data-toggle="collapse" data-target="#shaping-body" aria-expanded="true" aria-controls="template">
+                                Shaping the Mold
                                 </a>
                             </h2>
                         </div>
                         <div id="shaping-body" class="collapse" aria-labelledby="formation-header" data-parent="#history-accordion">
                             <div class="card-body">
+                                <h3>2006 - 2009</h3>
                                 <p>[Description TBD]</p>
 
                                 <!-- Initial Shaping Accordion -->
@@ -249,17 +251,18 @@
                         </div>
                     </div>
 
-                    <!-- Card #3: The Dark Years -->
+                    <!-- Card #3: Night Approaches -->
                     <div class="card">
                         <div class="card-header" id="darkyears-header">
                             <h2 class="mb-0">
-                                <a class="btn btn-link btn-block pl-0 text-left" type="button" data-toggle="collapse" data-target="#darkyears-body" aria-expanded="true" aria-controls="template">
-                                2009 - 2012: The Dark Years
+                                <a class="btn btn-link btn-block pl-4 py-3 text-left" type="button" data-toggle="collapse" data-target="#darkyears-body" aria-expanded="true" aria-controls="template">
+                                Night Approaches
                                 </a>
                             </h2>
                         </div>
                         <div id="darkyears-body" class="collapse" aria-labelledby="darkyears-header" data-parent="#history-accordion">
                             <div class="card-body">
+                                <h3>2009 - 2012</h3>
                                 <p>[Description TBD]</p>
 
                                 <!-- Initial Shaping Accordion -->
@@ -309,17 +312,18 @@
                         </div>
                     </div>
 
-                    <!-- Card #4: Forward Until Dawn -->
+                    <!-- Card #4: Forward Unto Dawn -->
                     <div class="card">
                         <div class="card-header" id="untodawn-header">
                             <h2 class="mb-0">
-                                <a class="btn btn-link btn-block pl-0 text-left" type="button" data-toggle="collapse" data-target="#untodawn-body" aria-expanded="true" aria-controls="template">
-                                2012 - 2016: Forward Until Dawn
+                                <a class="btn btn-link btn-block pl-4 py-3 text-left" type="button" data-toggle="collapse" data-target="#untodawn-body" aria-expanded="true" aria-controls="template">
+                                Forward Unto Dawn
                                 </a>
                             </h2>
                         </div>
                         <div id="untodawn-body" class="collapse" aria-labelledby="formation-header" data-parent="#history-accordion">
                             <div class="card-body">
+                                <h3>2012 - 2016</h3>
                                 <p>[Description TBD]</p>
 
                                 <!-- Initial Shaping Accordion -->
@@ -418,13 +422,14 @@
                     <div class="card">
                         <div class="card-header" id="phoenix-header">
                             <h2 class="mb-0">
-                                <a class="btn btn-link btn-block pl-0 text-left" type="button" data-toggle="collapse" data-target="#phoenix-body" aria-expanded="true" aria-controls="template">
-                                2016 - 2020: A Phoenix Rises
+                                <a class="btn btn-link btn-block pl-4 py-3 text-left" type="button" data-toggle="collapse" data-target="#phoenix-body" aria-expanded="true" aria-controls="template">
+                                A Phoenix Rises
                                 </a>
                             </h2>
                         </div>
                         <div id="phoenix-body" class="collapse" aria-labelledby="formation-header" data-parent="#history-accordion">
                             <div class="card-body">
+                                <h3>2016 - 2020</h3>
                                 <p>[Description TBD]</p>
 
                                 <!-- Initial Shaping Accordion -->
@@ -527,13 +532,14 @@
 
                     <!-- Card #6: Looking Forward -->
                     <div class="card">
-                        <div class="card-header" id="phoenix-header">
+                        <div class="card-header" id="forward-header">
                             <h2 class="mb-0">
-                                <a class="btn btn-link btn-block pl-0 text-left" type="button" data-toggle="collapse" data-target="#phoenix-body" aria-expanded="true" aria-controls="template">Looking Forward</a>
+                                <a class="btn btn-link btn-block pl-4 py-3 text-left" type="button" data-toggle="collapse" data-target="#forward-body" aria-expanded="true" aria-controls="template">Looking Forward</a>
                             </h2>
                         </div>
-                        <div id="phoenix-body" class="collapse" aria-labelledby="formation-header" data-parent="#history-accordion">
+                        <div id="forward-body" class="collapse" aria-labelledby="formation-header" data-parent="#history-accordion">
                             <div class="card-body">
+                                <h3>2020 - Present</h3>
                                 <p>Over the years, Squad 9 has advanced from a season of growth into a new season of achievement. The weeks and months ahead hold new opportunities for us to further extend the strength and influence of the team we all proudly serve.</p>
                                 <p>In the midst of striving to build our legend as one of the greatest FPS teams on PC, we pause to reflect on where we have been and remember the names of those who helped bring us to this point. Over 16 years have passed since our founding, yet Squad 9 remains committed to the timeless ideals that led to its creation. Our mission is to be a team that enables skilled players with shared values to come together and win.</p>
                                 <p>After all this time, many of the facets of Squad 9’s early organization and leadership still exist today as newer versions of the same ideas. Things such as fireteams and a balance of responsibilities between Officer Corps and Command Staff have been practiced by Squad 9 since its days on Halo. And while these institutions have never been perfect, we’ve continued refining our organization to perform better each year.</p>

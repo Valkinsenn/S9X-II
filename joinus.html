@@ -31,15 +31,15 @@
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0">
         <div class="container">
-            <a href="./index.html" class="navbar-brand d-flex align-items-center py-3 px-0 px-md-3 mr-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9xnavbar" aria-controls="s9xnavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="./index.html" class="navbar-brand d-flex align-items-center py-3 px-0 px-md-3 mx-auto">
                 <img src="./images/s9logo.png" alt="Squad 9 Warhawk"  class="navbar-brand-logo mr-2">
                 <span class="d-none d-md-block">Squad 9 Gaming</span>
             </a>
-            <button class="music-player ml-auto mr-2 px-3 d-sm-none" onclick="playPause()">
+            <button class="music-player px-3 d-sm-none" onclick="playPause()">
                 <div id="playPauseSmall" class="pause"></div>
-            </button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#s9xnavbar" aria-controls="s9xnavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="s9xnavbar">
@@ -48,10 +48,10 @@
                     <a href="./history.html" class="nav-link px-3 py-3">History</a>
                     <a href="./wiki.html" class="nav-link px-3 py-3">Wiki</a>
                     <a href="#" class="nav-link px-3 py-3">Store</a>
+                    <a href="./joinus.html" class="nav-link px-3 py-3 active">Join</a>
                     <!-- <a href="#" class="nav-link px-3 py-3">Barracks</a> -->
                 </div>
                 <span class="navbar-nav ml-auto">
-                    <a href="./joinus.html" class="nav-link px-3 py-3 active">Join</a>
                     <!-- <a href="./loginpage.html" class="nav-link px-3 py-3">Login</a> -->
                     <button class="music-player px-3 py-3 d-none d-sm-block" onclick="playPause()">
                         <div id="playPause" class="pause"></div>
@@ -69,13 +69,13 @@
     <div class="container-fluid py-5 mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <h1 class="text-center">Welcome to Squad 9, Recruits!</h1>
+                <h1 class="text-center mb-0">Welcome to Squad 9, Recruits!</h1>
                 <hr class="main-hor-rule">
-                <h4 class="text-center mb-4">Thank you for your interest in joining us.</h4>
+                <h4 class="text-center mb-3">Thank you for your interest in joining us</h4>
 
-                <p class="text-center">We are currently accepting applications for membership. <br> Before applying however, please ensure you meet the following criteria:</p><br>
+                <p class="text-center">We are currently accepting applications for membership. <br> Before applying, please ensure you meet the following criteria:</p><br>
 
-                <ol class="ml-0 pl-3">
+                <ol class="ml-0 pl-3 pl-lg-0">
                     <li>Be at least 16 years old.</li>
                     <li>Have a working microphone or headset.</li>
                     <li>Have Discord installed and ready to use.</li>
@@ -85,18 +85,29 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-sm-4 col-md-3 col-lg-2">
-                <img src="./images/recruit-game-1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-none d-sm-block">
-                <img src="./images/slidecard_1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-sm-none mt-4 mb-3 px-4">
-            </div>
-            <div class="col-sm-4 col-md-3 col-lg-2">
-                <img src="./images/recruit-game-2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-none d-sm-block">
-                <img src="./images/slidecard_2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-sm-none my-4 px-4">
+            <div class="col-7">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <img src="./images/recruit-game-1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-none d-sm-block">
+                            <img src="./images/slidecard_1.png" alt="Halo: The Master Chief Collection" class="recruitment-card-img d-sm-none mt-4 mb-3 px-4">
+                        </div>
+                        <div class="col">
+                            <img src="./images/recruit-game-2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-none d-sm-block">
+                            <img src="./images/slidecard_2.png" alt="Call of Duty: Modern Warfare (2019)" class="recruitment-card-img d-sm-none my-4 px-4">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <p class="text-center mb-0">If you meet all the above requirements, click the button below, fill out the form, and submit it to us!</p>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
                 <p class="text-center">You will be contacted by our Leadership over Steam or Discord if you are accepted.</p>
             </div>
         </div>

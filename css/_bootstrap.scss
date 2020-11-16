@@ -1,0 +1,216 @@
+// Color Variables: Bootstrap
+$color-cobalt-dark: hsl(210, 35%, 13%);
+
+// CSS to be added
+
+/* ==============================
+Bootstrap: Accordions
+============================== */
+
+/* Accordions CSS Variables */
+:root {
+    --light-shadow: hsla(0, 0%, 0%, 50%);
+    --modal-bg-color: hsla(0, 0%, 0%, 50%);
+}
+
+.accordion {
+    box-shadow: 0 3px 5px var(--light-shadow);
+}
+
+/* ==============================
+Bootstrap: Buttons
+============================== */
+
+// Buttons SCSS Variables
+$button-base-color: hsl(0, 0%, 50%);
+$button-color-1: hsl(210, 0%, 28%);
+$button-color-2: hsl(210, 0%, 21%);
+
+.btn-secondary {
+    background-image: linear-gradient(to top, $button-color-1 0%, $button-color-2 49%, transparent 51%, $button-color-2 100%);
+    border: 1px solid black;
+    border-radius: 0;
+    // box-shadow: 0 2px 5px var(--light-shadow);
+}
+
+.btn-secondary:hover {
+    border: 1px solid black;
+}
+
+.btn-secondary:focus {
+    box-shadow: none !important;
+}
+
+button.close {
+    align-items: center;
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 500px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    text-shadow: 0 2px 2px var(--navlink-hover-color);
+    transition: background-color .4s, color .2s;
+    width: 50px; height: 50px;
+}
+
+button.close:hover {
+    background-color: hsl(0, 0%, 35%);
+}
+
+button.close:focus {
+    outline: none;
+}
+
+/* ==============================
+Bootstrap: Cards
+============================== */
+
+// Cards SCSS Color Variables
+$header-base-color: hsl(210, 25%, 18%);
+$header-color-1: hsl(210, 30%, 8%);
+$header-color-2: hsl(210, 30%, 11%);
+
+.card {
+    backdrop-filter: blur(5px) brightness(.85) saturate(.5);
+    background-color: #30303020;
+    // border: 1px solid #151515;
+    border: none;
+    border-radius: 0px;
+}
+
+.card-header {
+    background-color: $header-base-color;
+    background-image: linear-gradient(to top, $header-color-1 0%, $header-color-2 49%, transparent 51%, $header-color-2 100%);
+    // border-bottom: none;
+    box-shadow: 0 0 7px black;
+    padding: 0;
+}
+
+/* ==============================
+Bootstrap: Carousel
+============================== */
+.carousel-caption {
+    text-shadow: 0 0 5px black;
+}
+
+.carousel-image {
+    height: 50vh;
+    object-fit: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-card {
+    max-width: 350px;
+    max-height: 100px;
+    filter: drop-shadow(0px 5px 5px black);
+}
+
+.carousel-card-shadow {
+    background-image: linear-gradient(to top, hsla(0, 0%, 0%, 90%), transparent);
+    height: 150px;
+    position: absolute;
+    bottom: 0; right: 0; left: 0;
+    z-index: 1;
+}
+
+@media screen and (min-width: 576px) {
+    .carousel-image {
+        height: 50vh;
+        object-fit: cover;
+        z-index: 2;
+    }
+}
+
+/* ==============================
+Bootstrap: Containers
+============================== */
+.container-fluid {
+    position: relative;
+}
+
+/* ==============================
+Bootstrap: Forms
+============================== */
+.form-group {
+    background-color: $color-codgray;
+    border-radius: .5rem;
+    padding: 1rem;
+    padding-top: .5rem;
+}
+
+.form-control {
+    background-color: inherit;
+    border: 1px solid hsl(0, 0%, 15%);
+    /* border-radius: 0; */
+    color: $body-text-color;
+    /* padding-left: 0; */
+}
+
+.form-control:focus {
+    background-color: inherit;
+    box-shadow: 0 0 0 0 transparent;
+    border-color: var(--navlink-hover-color);
+    color: $body-text-color;
+}
+
+@media screen and (min-width: 576px) {
+    .form-group {
+        padding: 2rem;
+        padding-top: 1.5rem;
+    }
+}
+
+/* ==============================
+Bootstrap: Modals
+============================== */
+
+// Modal SCSS Variables
+$modal-bg-color: #30303060;
+
+.modal {
+    backdrop-filter: blur(15px);
+}
+
+.modal-header {
+    background-image: linear-gradient(to top, $header-color-1 0%, $header-color-2 49%, transparent 51%, $header-color-2 100%);
+    border-bottom: none;
+    box-shadow: 0 0 5px black;
+}
+
+.modal-header .close {
+    background-image: linear-gradient(0deg, hsl(0, 0%, 25%), transparent);
+    box-shadow: inset 0px 2px white, 0 2px 5px black;
+    margin-right: -.5rem;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 5px var(--light-shadow);
+}
+
+.modal-body {
+    backdrop-filter: blur(50px);
+    background-color: $modal-bg-color;
+    padding-bottom: .2rem;
+}
+
+.modal-footer {
+    background-image: linear-gradient(to top, $header-color-1 0%, $header-color-2 49%, transparent 51%, $header-color-2 100%);
+    border-top: none;
+}
+
+/* ==============================
+Bootstrap: Navbar
+============================== */
+
+.navbar {
+    backdrop-filter: blur(5px);
+    background-color: var(--navbar-bg-color);
+    box-shadow: 0 2px 5px var(--light-shadow);
+}

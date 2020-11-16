@@ -1,0 +1,102 @@
+// CSS to be added
+
+/* ==============================
+Images
+============================== */
+
+.container-bg {
+    background-attachment: fixed;
+    background-image: url("/images/hero-container-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px) brightness(.5) saturate(.5);
+    box-shadow: 0 0 5px black;
+    text-shadow: 0 2px 5px black, 0 2px 5px black;
+}
+
+.container-bg-2 {
+    background-image: url("/images/container-bg-2.jpg");
+}
+
+.container-bg-3 {
+    background-image: url("/images/smoke-bg.jpg");
+}
+
+.backing-image-1 {
+    background-attachment: fixed;
+    background-image: url("/images/main_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(.3);
+    position: fixed;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    z-index: -100;
+}
+
+.container-bg-fade {
+    background-image: linear-gradient(to right, transparent, hsla(0, 0%, 0%, 50%), transparent);
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%; height: 100%;
+}
+
+.team-img {
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rank-img {
+    max-height: 150px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.history-img {
+    width: 100%;
+}
+
+.recruitment-card-img {
+    filter: drop-shadow(0 5px 5px black);
+    width: 100%;
+}
+
+.lattice-grid-1 {
+    background-image: url("/images/loops/loop_lattice-grid-1.png");
+    background-repeat: repeat;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.lattice-grid-2 {
+    background-image: url("/images/loops/loop_lattice-grid-2.png");
+    background-position: center;
+    opacity: .65;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 2;
+}
+
+.com-update-img {
+    box-shadow: 0 3px 5px hsla(0, 0%, 0%, 50%);
+}
+
+@media screen and (min-width: 576px) {
+    .com-update-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .rank-img {
+        max-height: 210px;
+        object-fit: contain;
+        width: 100%;
+    }
+}

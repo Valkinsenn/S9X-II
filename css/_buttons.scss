@@ -1,0 +1,178 @@
+// Color Variables: Buttons
+$body-text-color: hsl(0, 0%, 80%);
+$btn-bg-color: hsl(0, 0%, 20%);
+$header-text-color: hsl(0, 0%, 95%);
+$subheader-text-color: hsl(197, 65%, 55%);
+
+// Font Variables: Buttons
+$body-font: "Open Sans", sans-serif;
+$header-font: "Steelfish", sans-serif;
+$subheader-font: "Dev Gothic", sans-serif;
+
+// CSS to be added
+
+/* ==============================
+Buttons
+============================== */
+.inactive {
+    filter: brightness(0);
+}
+
+.btn {
+    font-family: $header-font;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.btn-dark {
+    background-color: $btn-bg-color;
+    border-color: transparent;
+}
+
+.btn-dark:hover {
+    background-color: $color-cobalt-dark;
+}
+
+.btn-link {
+    color: $header-text-color;
+    font-size: 2rem;
+    transition: backdrop-filter .2s, color .2s;
+}
+
+.btn-link:hover {
+    backdrop-filter: brightness(1.5) contrast(1.15) saturate(.9);
+    color: $subheader-text-color;
+    text-decoration: none;
+}
+
+.btn-link:focus {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn-small {
+    font-size: 1.5rem;
+}
+
+.img-btn {
+    border: none;
+    border-radius: 5px;
+    background: hsl(0, 0%, 15%);
+    /* filter: grayscale(1); */
+    height: 100%;
+    padding: .75rem .5rem;
+    transition: box-shadow .2s, transform .2s;
+    width: 100%;
+}
+
+.img-btn:hover {
+    /* box-shadow: 0 3px 5px black; */
+    /* filter: grayscale(0); */
+    transform: scale(1.05);
+}
+
+.img-btn:focus {
+    outline: none;
+}
+
+.music-player {
+    background: transparent;
+    border: none;
+    filter: brightness(.65);
+    height: 100%;
+    outline: none;
+    transition: background-color .2s, box-shadow .4s;
+}
+
+.music-player:hover {
+    filter: brightness(1);
+}
+
+.music-player:focus {
+    outline: none;
+}
+
+.play {
+    background-image: url("/images/play.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1px;
+    width: 14px;
+    height: 30px;
+}
+
+.pause {
+    background-image: url("/images/pause.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 30px;
+}
+
+.navbar-brand, .nav-link {
+    font-family: $header-font;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    transition: background-color .2s, box-shadow .4s;
+}
+
+.navbar-brand-logo {
+    height: 30px;
+}
+
+.nav-link {
+    border: 1px solid transparent;
+}
+
+.donate-button {
+    max-width: 300px;
+}
+
+.official-link {
+    background-color: hsl(0, 0%, 0%);
+    transition: background-color .4s;
+    width: 65px; height: auto;
+}
+
+.steam {
+    background-color: hsl(222, 30%, 16%);
+}
+
+.steam:hover {
+    background-color: hsl(222, 30%, 12%);
+}
+
+.twitch {
+    background-color: hsl(261, 35%, 35%);
+}
+
+.twitch:hover {
+    background-color: hsl(261, 35%, 25%);
+}
+
+.twitter {
+    background-color: hsl(203, 50%, 25%);
+}
+
+.twitter:hover {
+    background-color: hsl(203, 50%, 15%);
+}
+
+.youtube {
+    background-color: hsl(0, 75%, 40%);
+}
+
+.youtube:hover {
+    background-color: hsl(0, 75%, 30%);
+}
+
+@media screen and (min-width: 576px) {
+    .nav-link:hover, .navbar-brand:hover, .music-player:hover {
+        background-color: var(--navlink-hover-color);
+        box-shadow: 0 3px $color-cobalt-light;
+    }
+}

@@ -1,0 +1,48 @@
+// Color Variables: Layout
+$body-bg: hsl(0, 0%, 5%);
+$btn-bg-color: hsl(0, 0%, 20%);
+$footer-bg-color: hsl(210, 15%, 7%);
+$navbar-bg-color: hsla(0, 0%, 0%, 85%);
+
+// CSS to be added
+
+/* ==============================
+Layout
+============================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-attachment: fixed;
+    background-color: $color-codgray;
+    background-position: center;
+    background-size: cover;
+}
+
+br {
+    line-height: .1rem;
+}
+
+.bg-blur {
+    backdrop-filter: blur(7px);
+}
+
+.bg-blur-2 {
+    backdrop-filter: blur(7px) brightness(.5);
+}
+
+.bg-darker {
+    background: $color-cobalt-dark;
+}
+
+.bg-darkest {
+    background: $footer-bg-color;
+}
+
+@media screen and (min-width: 992px) {
+    .borders-lg {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+}

@@ -1,0 +1,84 @@
+// Color Variables: Typography
+$body-text-color: hsl(0, 0%, 85%);
+$header-text-color: hsl(0, 0%, 95%);
+$subheader-text-color: hsl(197, 65%, 55%);
+
+// Font Variables
+$body-font: "Open Sans", sans-serif;
+$header-font: "Steelfish", sans-serif;
+$subheader-font: "Dev Gothic", sans-serif;
+
+// CSS to be added
+
+/* ==============================
+Typography
+============================== */
+:root {
+    font-size: 16px;
+}
+
+body {
+    color: $body-text-color;
+    font-family: $body-font;
+    font-size: .9rem;
+    text-shadow: 0 2px 5px black;
+}
+
+h1, h2, h3 {
+    color: $header-text-color;
+    font-family: $header-font;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.alt-motto {
+    font-size: 1.35rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h4, h5, h6 {
+    color: $subheader-text-color;
+    font-family: $subheader-font;
+    letter-spacing: .1rem;
+}
+
+p {
+    line-height: 1.6rem;
+}
+
+.copyright-text {
+    font-family: $subheader-font;
+    font-size: 1.2rem;
+    letter-spacing: .05rem;
+}
+
+@media screen and (min-width: 576px) {
+    body {
+        font-size: 1rem;
+    }
+
+    p {
+        line-height: 1.8rem;
+    }
+
+    .alt-motto {
+        font-size: 1.75rem;
+    }
+    .motto-text {
+        font-size: .85rem;
+        margin-bottom: .2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .text-lg-justify {
+        text-align: justify;
+    }
+}

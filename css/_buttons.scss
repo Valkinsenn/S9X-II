@@ -15,6 +15,12 @@ $subheader-font: "Dev Gothic", sans-serif;
 Buttons
 ============================== */
 
+/* CSS Variables */
+:root {
+    --box-glow: hsla(197, 50%, 50%, 50%);
+    --light-shadow: hsla(0, 0%, 0%, 50%);
+}
+
 .inactive {
     filter: brightness(0);
 }
@@ -61,19 +67,20 @@ Buttons
 
 .img-btn {
     border: none;
-    border-radius: 5px;
-    background: hsl(0, 0%, 15%);
+    border-radius: 0;
+    background: var(--light-shadow);
     /* filter: grayscale(1); */
     height: 100%;
     padding: .75rem .5rem;
     transition: box-shadow .2s, transform .2s;
     width: 100%;
+    box-shadow: 0 3px 5px var(--light-shadow);
 }
 
 .img-btn:hover {
-    /* box-shadow: 0 3px 5px black; */
+    box-shadow: 0 3px 5px var(--box-glow);
     /* filter: grayscale(0); */
-    transform: scale(1.05);
+    transform: scale(1.04) translateY(-1px);
 }
 
 .img-btn:focus {

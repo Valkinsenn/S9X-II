@@ -41,11 +41,21 @@ br {
 }
 
 .recruitment-box {
+    background-image: url("/images/bg_rcrtmnt_sml.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 0 3px 5px var(--light-bg-shadow);
     height: 330px;
     position: relative;
     overflow: hidden;
     width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .recruitment-box {
+        background-image: url("/images/bg_rcrtmnt.jpg");
+    }
 }
 
 @media screen and (min-width: 992px) {

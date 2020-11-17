@@ -51,7 +51,7 @@ button.close {
     opacity: 1;
     text-shadow: 0 2px 2px var(--navlink-hover-color);
     transition: background-color .4s, color .2s;
-    width: 50px; height: 50px;
+    width: 40px; height: 40px;
 }
 
 button.close:hover {
@@ -183,7 +183,7 @@ $modal-bg-color: #30303060;
 
 .modal-header .close {
     background-image: linear-gradient(0deg, hsl(0, 0%, 25%), transparent);
-    box-shadow: inset 0px 2px white, 0 2px 5px black;
+    box-shadow: inset 0px 2px 1px white, 0 2px 5px black;
     margin-right: -.5rem;
 }
 

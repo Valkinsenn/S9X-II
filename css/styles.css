@@ -25,11 +25,19 @@ br {
   background: #0f1215; }
 
 .recruitment-box {
+  background-image: url("/images/bg_rcrtmnt_sml.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 0 3px 5px var(--light-bg-shadow);
   height: 330px;
   position: relative;
   overflow: hidden;
   width: 100%; }
+
+@media screen and (min-width: 576px) {
+  .recruitment-box {
+    background-image: url("/images/bg_rcrtmnt.jpg"); } }
 
 @media screen and (min-width: 992px) {
   .borders-lg {
@@ -126,8 +134,8 @@ button.close {
   opacity: 1;
   text-shadow: 0 2px 2px var(--navlink-hover-color);
   transition: background-color .4s, color .2s;
-  width: 50px;
-  height: 50px; }
+  width: 40px;
+  height: 40px; }
 
 button.close:hover {
   background-color: #595959; }
@@ -229,7 +237,7 @@ Bootstrap: Modals
 
 .modal-header .close {
   background-image: linear-gradient(0deg, #404040, transparent);
-  box-shadow: inset 0px 2px white, 0 2px 5px black;
+  box-shadow: inset 0px 2px 1px white, 0 2px 5px black;
   margin-right: -.5rem; }
 
 .modal-content {
@@ -264,6 +272,11 @@ Bootstrap: Navbar
 /* ==============================
 Buttons
 ============================== */
+/* CSS Variables */
+:root {
+  --box-glow: hsla(197, 50%, 50%, 50%);
+  --light-shadow: hsla(0, 0%, 0%, 50%); }
+
 .inactive {
   filter: brightness(0); }
 
@@ -301,18 +314,19 @@ Buttons
 
 .img-btn {
   border: none;
-  border-radius: 5px;
-  background: #262626;
+  border-radius: 0;
+  background: var(--light-shadow);
   /* filter: grayscale(1); */
   height: 100%;
   padding: .75rem .5rem;
   transition: box-shadow .2s, transform .2s;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0 3px 5px var(--light-shadow); }
 
 .img-btn:hover {
-  /* box-shadow: 0 3px 5px black; */
+  box-shadow: 0 3px 5px var(--box-glow);
   /* filter: grayscale(0); */
-  transform: scale(1.05); }
+  transform: scale(1.04) translateY(-1px); }
 
 .img-btn:focus {
   outline: none; }
@@ -491,7 +505,7 @@ Images
 .recruitment-card-l-img {
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 30px;
   transform: scaleX(-1);
   width: 300px;
   z-index: 1; }
@@ -499,7 +513,7 @@ Images
 .recruitment-card-r-img {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 30px;
   width: 300px;
   z-index: 1; }
 
@@ -507,7 +521,7 @@ Images
   top: 10px;
   left: 50%;
   filter: drop-shadow(0 4px 3px black);
-  height: 75px;
+  height: 65px;
   max-width: 230px;
   object-fit: contain;
   object-position: center;
@@ -542,25 +556,19 @@ Images
     object-fit: contain;
     width: 100%; }
   .recruitment-card-l-logo {
-    bottom: 10px;
-    left: 10px;
+    bottom: 30px;
+    left: 50px;
     top: auto;
-    filter: drop-shadow(0 4px 3px black);
     height: 60px;
     width: 250px;
-    object-fit: contain;
     object-position: left;
-    position: absolute;
     transform: translateX(0%);
     z-index: 2; }
   .recruitment-card-r-logo {
-    bottom: 0;
-    right: 10px;
-    filter: drop-shadow(0 4px 3px black);
+    bottom: 20px;
+    right: 50px;
     height: 60px;
     width: 250px;
-    object-fit: contain;
-    position: absolute;
     transform: translateX(0%);
     z-index: 2; }
   .team-img {

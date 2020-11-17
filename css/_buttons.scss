@@ -14,9 +14,12 @@ $subheader-font: "Dev Gothic", sans-serif;
 /* ==============================
 Buttons
 ============================== */
+
 .inactive {
     filter: brightness(0);
 }
+
+/* Multi-use Buttons */
 
 .btn {
     font-family: $header-font;
@@ -28,6 +31,7 @@ Buttons
 .btn-dark {
     background-color: $btn-bg-color;
     border-color: transparent;
+    border-radius: 0;
 }
 
 .btn-dark:hover {
@@ -76,13 +80,15 @@ Buttons
     outline: none;
 }
 
+/* Music Player */
+
 .music-player {
     background: transparent;
     border: none;
     filter: brightness(.65);
     height: 100%;
     outline: none;
-    transition: background-color .2s, box-shadow .4s;
+    transition: background-color .2s, box-shadow .4s, filter .2s;
 }
 
 .music-player:hover {
@@ -97,9 +103,9 @@ Buttons
     background-image: url("/images/play.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 15px auto;
     margin-right: 1px;
-    width: 14px;
+    width: 24px;
     height: 30px;
 }
 
@@ -107,10 +113,12 @@ Buttons
     background-image: url("/images/pause.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 15px;
+    background-size: 15px auto;
+    width: 25px;
     height: 30px;
 }
+
+/* Navbar Buttons */
 
 .navbar-brand, .nav-link {
     font-family: $header-font;
@@ -137,6 +145,8 @@ Buttons
     transition: background-color .4s;
     width: 65px; height: auto;
 }
+
+/* Social Media Buttons */
 
 .steam {
     background-color: hsl(222, 30%, 16%);

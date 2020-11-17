@@ -214,3 +214,11 @@ Bootstrap: Navbar
     background-color: var(--navbar-bg-color);
     box-shadow: 0 2px 5px var(--light-shadow);
 }
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}

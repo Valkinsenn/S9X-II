@@ -1,6 +1,6 @@
 // Colors: Scrollbar
 $scrollbar-track-color: hsl(0, 0%, 8%);
-$scrollbar-thumb-color: hsl(197, 40%, 45%);
+$scrollbar-thumb-color: hsl(197, 40%, 50%);
 $scrollbar-thumb-hover-color: hsl(197, 40%, 30%);
 
 // CSS to be altered
@@ -30,4 +30,5 @@ Custom Scrollbar
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: $scrollbar-thumb-hover-color; 
+    background-clip: padding-box;
 }

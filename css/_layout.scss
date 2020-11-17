@@ -9,6 +9,12 @@ $navbar-bg-color: hsla(0, 0%, 0%, 85%);
 /* ==============================
 Layout
 ============================== */
+
+/* Layout SCSS Color Variables */
+:root {
+    --light-bg-shadow: hsla(0, 0%, 0%, 50%);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -24,13 +30,7 @@ br {
     line-height: .1rem;
 }
 
-.bg-blur {
-    backdrop-filter: blur(7px);
-}
-
-.bg-blur-2 {
-    backdrop-filter: blur(7px) brightness(.5);
-}
+/* Background Stuff */
 
 .bg-darker {
     background: $color-cobalt-dark;
@@ -38,6 +38,14 @@ br {
 
 .bg-darkest {
     background: $footer-bg-color;
+}
+
+.recruitment-box {
+    box-shadow: 0 3px 5px var(--light-bg-shadow);
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 @media screen and (min-width: 992px) {

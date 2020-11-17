@@ -1,6 +1,10 @@
 /* ==============================
 Layout
 ============================== */
+/* Layout SCSS Color Variables */
+:root {
+  --light-bg-shadow: hsla(0, 0%, 0%, 50%); }
+
 * {
   box-sizing: border-box; }
 
@@ -13,17 +17,19 @@ body {
 br {
   line-height: .1rem; }
 
-.bg-blur {
-  backdrop-filter: blur(7px); }
-
-.bg-blur-2 {
-  backdrop-filter: blur(7px) brightness(0.5); }
-
+/* Background Stuff */
 .bg-darker {
   background: #16212d; }
 
 .bg-darkest {
   background: #0f1215; }
+
+.recruitment-box {
+  box-shadow: 0 3px 5px var(--light-bg-shadow);
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
 
 @media screen and (min-width: 992px) {
   .borders-lg {
@@ -249,12 +255,19 @@ Bootstrap: Navbar
   background-color: var(--navbar-bg-color);
   box-shadow: 0 2px 5px var(--light-shadow); }
 
+.navbar-toggler {
+  border: none; }
+
+.navbar-toggler:focus {
+  outline: none; }
+
 /* ==============================
 Buttons
 ============================== */
 .inactive {
   filter: brightness(0); }
 
+/* Multi-use Buttons */
 .btn {
   font-family: "Steelfish", sans-serif;
   font-size: 1.5rem;
@@ -263,7 +276,8 @@ Buttons
 
 .btn-dark {
   background-color: #333333;
-  border-color: transparent; }
+  border-color: transparent;
+  border-radius: 0; }
 
 .btn-dark:hover {
   background-color: #16212d; }
@@ -303,13 +317,14 @@ Buttons
 .img-btn:focus {
   outline: none; }
 
+/* Music Player */
 .music-player {
   background: transparent;
   border: none;
   filter: brightness(0.65);
   height: 100%;
   outline: none;
-  transition: background-color .2s, box-shadow .4s; }
+  transition: background-color .2s, box-shadow .4s, filter .2s; }
 
 .music-player:hover {
   filter: brightness(1); }
@@ -321,19 +336,20 @@ Buttons
   background-image: url("/images/play.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 15px auto;
   margin-right: 1px;
-  width: 14px;
+  width: 24px;
   height: 30px; }
 
 .pause {
   background-image: url("/images/pause.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 15px;
+  background-size: 15px auto;
+  width: 25px;
   height: 30px; }
 
+/* Navbar Buttons */
 .navbar-brand, .nav-link {
   font-family: "Steelfish", sans-serif;
   font-size: 1.2rem;
@@ -356,6 +372,7 @@ Buttons
   width: 65px;
   height: auto; }
 
+/* Social Media Buttons */
 .steam {
   background-color: #1d2435; }
 
@@ -388,6 +405,28 @@ Buttons
 /* ==============================
 Images
 ============================== */
+.backing-image-1 {
+  background-attachment: fixed;
+  background-image: url("/images/main_bg_alt.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100; }
+
+.backing-image-2 {
+  background-image: url("/images/main_bg_2.jpg"); }
+
+.backing-image-3 {
+  background-image: url("/images/main_bg_3.jpg"); }
+
+.com-update-img {
+  box-shadow: 0 3px 5px black; }
+
 .container-bg {
   background-attachment: fixed;
   background-image: url("/images/hero-container-bg.jpg");
@@ -403,19 +442,6 @@ Images
 .container-bg-3 {
   background-image: url("/images/smoke-bg.jpg"); }
 
-.backing-image-1 {
-  background-attachment: fixed;
-  background-image: url("/images/main_bg.jpg");
-  background-position: center;
-  background-size: cover;
-  filter: grayscale(0.3);
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -100; }
-
 .container-bg-fade {
   background-image: linear-gradient(to right, transparent, black, transparent);
   position: absolute;
@@ -426,21 +452,7 @@ Images
   width: 100%;
   height: 100%; }
 
-.team-img {
-  max-height: 250px;
-  object-fit: cover;
-  width: 100%; }
-
-.rank-img {
-  max-height: 150px;
-  object-fit: contain;
-  width: 100%; }
-
 .history-img {
-  width: 100%; }
-
-.recruitment-card-img {
-  filter: drop-shadow(0 5px 5px black);
   width: 100%; }
 
 .lattice-grid-1 {
@@ -464,20 +476,95 @@ Images
   height: 100%;
   z-index: 2; }
 
-.com-update-img {
-  box-shadow: 0 3px 5px black; }
+.rank-img {
+  max-height: 150px;
+  object-fit: contain;
+  width: 100%; }
+
+.recruitment-card-img {
+  filter: drop-shadow(0 5px 5px black);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -3; }
+
+.recruitment-card-l-img {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transform: scaleX(-1);
+  width: 300px;
+  z-index: 1; }
+
+.recruitment-card-r-img {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 300px;
+  z-index: 1; }
+
+.recruitment-card-l-logo {
+  top: 10px;
+  left: 50%;
+  filter: drop-shadow(0 4px 3px black);
+  height: 75px;
+  max-width: 230px;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(-50%); }
+
+.recruitment-card-r-logo {
+  bottom: 0;
+  right: 50%;
+  filter: drop-shadow(0 4px 3px black);
+  height: 75px;
+  max-width: 230px;
+  object-fit: contain;
+  position: absolute;
+  transform: translateX(50%);
+  z-index: 2; }
+
+.team-img {
+  max-height: 125px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
 
 @media screen and (min-width: 576px) {
   .com-update-img {
     height: 300px;
     width: 100%;
-    object-fit: cover; } }
-
-@media screen and (min-width: 576px) {
+    object-fit: cover; }
   .rank-img {
     max-height: 210px;
     object-fit: contain;
-    width: 100%; } }
+    width: 100%; }
+  .recruitment-card-l-logo {
+    bottom: 10px;
+    left: 10px;
+    top: auto;
+    filter: drop-shadow(0 4px 3px black);
+    height: 60px;
+    width: 250px;
+    object-fit: contain;
+    object-position: left;
+    position: absolute;
+    transform: translateX(0%);
+    z-index: 2; }
+  .recruitment-card-r-logo {
+    bottom: 0;
+    right: 10px;
+    filter: drop-shadow(0 4px 3px black);
+    height: 60px;
+    width: 250px;
+    object-fit: contain;
+    position: absolute;
+    transform: translateX(0%);
+    z-index: 2; }
+  .team-img {
+    max-height: 250px; } }
 
 /* ==============================
 Video
@@ -513,14 +600,15 @@ Custom Scrollbar
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #4587a1;
+  background: #4d96b3;
   background-clip: padding-box;
   border: 3px solid transparent;
   border-radius: 2rem; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2e5a6b; }
+  background: #2e5a6b;
+  background-clip: padding-box; }
 
 /* ==============================
 Custom Fonts
@@ -545,7 +633,7 @@ Custom Fonts
 Color Variables
 ============================== */
 :root {
-  --navbar-bg-color: hsla(210, 35%, 5%, 85%);
+  --navbar-bg-color: hsla(210, 35%, 10%, 80%);
   --navlink-hover-color: hsla(197, 65%, 50%, 15%);
   --navlink-hover-shadow-color: hsl(197, 65%, 55%); }
 

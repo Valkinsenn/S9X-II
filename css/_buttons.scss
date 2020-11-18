@@ -35,13 +35,24 @@ Buttons
 }
 
 .btn-dark {
-    background-color: $btn-bg-color;
-    border-color: transparent;
+    background-color: hsl(0, 0%, 25%);
+    background-image: linear-gradient(to top, #0d0d0d 0%, #262626 49%, transparent 51%, #262626 100%), linear-gradient(to right, hsl(0, 0%, 16%), transparent, hsl(0, 0%, 16%));
+    border: none;
     border-radius: 0;
+    box-shadow: 0 2px 5px var(--light-shadow);
+    font-size: 1.7rem;
+    overflow: hidden;
+    padding: 15px 20px;
+    position: relative;
 }
 
 .btn-dark:hover {
-    background-color: $color-cobalt-dark;
+    background-color: hsl(0, 0%, 35%);
+}
+
+.btn-dark:focus {
+    background-color: hsl(0, 0%, 15%) !important;
+    box-shadow: 0 2px 5px var(--light-shadow) !important;
 }
 
 .btn-link {
@@ -63,6 +74,20 @@ Buttons
 
 .btn-small {
     font-size: 1.5rem;
+}
+
+.icon-discord {
+    filter: drop-shadow(0 2px 5px var(--light-shadow));
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+}
+
+.icon-steam {
+    filter: drop-shadow(0 2px 5px var(--light-shadow));
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
 }
 
 .img-btn {

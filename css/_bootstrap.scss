@@ -71,6 +71,11 @@ $header-base-color: hsl(210, 25%, 18%);
 $header-color-1: hsl(210, 30%, 8%);
 $header-color-2: hsl(210, 30%, 11%);
 
+/* Cards CSS Variables */
+:root {
+    --card-header-color-tp: hsla(210, 35%, 5%, 55%);
+}
+
 .card {
     backdrop-filter: blur(5px) brightness(.85) saturate(.5);
     background-color: #30303020;
@@ -81,7 +86,9 @@ $header-color-2: hsl(210, 30%, 11%);
 
 .card-header {
     background-color: $header-base-color;
-    background-image: linear-gradient(to top, $header-color-1 0%, $header-color-2 49%, transparent 51%, $header-color-2 100%);
+    background-image: 
+    linear-gradient(to right, var(--card-header-color-tp), transparent 33%, transparent 66%, var(--card-header-color-tp)), 
+    linear-gradient(to top, #0e141b 0%, #141c24 49%, transparent 51%, #141c24 100%);
     // border-bottom: none;
     box-shadow: 0 0 7px black;
     padding: 0;

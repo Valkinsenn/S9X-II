@@ -146,6 +146,10 @@ button.close:focus {
 /* ==============================
 Bootstrap: Cards
 ============================== */
+/* Cards CSS Variables */
+:root {
+  --card-header-color-tp: hsla(210, 35%, 5%, 55%); }
+
 .card {
   backdrop-filter: blur(5px) brightness(0.85) saturate(0.5);
   background-color: #30303020;
@@ -154,7 +158,7 @@ Bootstrap: Cards
 
 .card-header {
   background-color: #222e39;
-  background-image: linear-gradient(to top, #0e141b 0%, #141c24 49%, transparent 51%, #141c24 100%);
+  background-image: linear-gradient(to right, var(--card-header-color-tp), transparent 33%, transparent 66%, var(--card-header-color-tp)), linear-gradient(to top, #0e141b 0%, #141c24 49%, transparent 51%, #141c24 100%);
   box-shadow: 0 0 7px black;
   padding: 0; }
 
@@ -288,12 +292,22 @@ Buttons
   text-transform: uppercase; }
 
 .btn-dark {
-  background-color: #333333;
-  border-color: transparent;
-  border-radius: 0; }
+  background-color: #404040;
+  background-image: linear-gradient(to top, #0d0d0d 0%, #262626 49%, transparent 51%, #262626 100%), linear-gradient(to right, #292929, transparent, #292929);
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 2px 5px var(--light-shadow);
+  font-size: 1.7rem;
+  overflow: hidden;
+  padding: 15px 20px;
+  position: relative; }
 
 .btn-dark:hover {
-  background-color: #16212d; }
+  background-color: #595959; }
+
+.btn-dark:focus {
+  background-color: #262626 !important;
+  box-shadow: 0 2px 5px var(--light-shadow) !important; }
 
 .btn-link {
   color: #f2f2f2;
@@ -311,6 +325,20 @@ Buttons
 
 .btn-small {
   font-size: 1.5rem; }
+
+.icon-discord {
+  filter: drop-shadow(0 2px 5px var(--light-shadow));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.icon-steam {
+  filter: drop-shadow(0 2px 5px var(--light-shadow));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 .img-btn {
   border: none;
@@ -520,8 +548,8 @@ Images
 .recruitment-card-l-logo {
   top: 10px;
   left: 50%;
-  filter: drop-shadow(0 4px 3px black);
-  height: 65px;
+  filter: drop-shadow(0 2px 3px black) drop-shadow(0 2px 5px black);
+  height: 60px;
   max-width: 230px;
   object-fit: contain;
   object-position: center;
@@ -532,7 +560,7 @@ Images
 .recruitment-card-r-logo {
   bottom: 0;
   right: 50%;
-  filter: drop-shadow(0 4px 3px black);
+  filter: drop-shadow(0 2px 3px black) drop-shadow(0 2px 5px black);
   height: 75px;
   max-width: 230px;
   object-fit: contain;
@@ -608,14 +636,14 @@ Custom Scrollbar
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #4d96b3;
+  background: #409bbf;
   background-clip: padding-box;
   border: 3px solid transparent;
   border-radius: 2rem; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2e5a6b;
+  background: #265d73;
   background-clip: padding-box; }
 
 /* ==============================

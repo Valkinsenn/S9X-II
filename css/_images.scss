@@ -107,8 +107,8 @@ Images
 
 .recruitment-card-l-logo {
     top: 10px; left: 50%;
-    filter: drop-shadow(0 4px 3px black);
-    height: 65px; max-width: 230px;
+    filter: drop-shadow(0 2px 3px black) drop-shadow(0 2px 5px black);
+    height: 60px; max-width: 230px;
     object-fit: contain;
     object-position: center;
     position: absolute;
@@ -118,7 +118,7 @@ Images
 
 .recruitment-card-r-logo {
     bottom: 0; right: 50%;
-    filter: drop-shadow(0 4px 3px black);
+    filter: drop-shadow(0 2px 3px black) drop-shadow(0 2px 5px black);
     height: 75px; max-width: 230px;
     object-fit: contain;
     position: absolute;

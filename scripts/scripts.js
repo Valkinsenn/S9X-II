@@ -8,10 +8,9 @@ const controlButtonSmall = document.querySelector("#playPauseSmall");
 
 
 // Functions
-window.onload = function() {
-    pageAudio.volume = 0.05;
-    pageAudio.play();
-}
+// window.onload = function() {
+//     pageAudio.play();
+// }
 
 function playPause() {
     if (!pageAudio.paused) {

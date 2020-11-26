@@ -1,6 +1,3 @@
-// Runs Strict Mode
-"run strict";
-
 // Global Variables
 const pageAudio = document.querySelector("#track");
 const controlButton = document.querySelector("#playPause");
@@ -8,9 +5,9 @@ const controlButtonSmall = document.querySelector("#playPauseSmall");
 
 
 // Functions
-// window.onload = function() {
-//     pageAudio.play();
-// }
+window.addEventListener('load', (event) => {
+    pageAudio.volume = 0.2;
+});
 
 function playPause() {
     if (!pageAudio.paused) {

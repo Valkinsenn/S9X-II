@@ -1,0 +1,17 @@
+// Font Variables
+$body-font: "Open Sans", sans-serif;
+$header-font: "Steelfish", sans-serif;
+$subheader-font: "Dev Gothic", sans-serif;
+
+// CSS to be added.
+
+/* ==============================
+Progress Bars
+============================== */
+
+.progress-bar {
+    font-family: $header-font;
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}

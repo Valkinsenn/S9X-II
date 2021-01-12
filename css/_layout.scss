@@ -3,6 +3,7 @@ $body-bg: hsl(0, 0%, 5%);
 $btn-bg-color: hsl(0, 0%, 20%);
 $footer-bg-color: hsl(210, 15%, 7%);
 $navbar-bg-color: hsla(0, 0%, 0%, 85%);
+$purple-color: hsl(260, 50%, 50%);
 
 // CSS to be added
 
@@ -38,6 +39,10 @@ br {
 
 .bg-darkest {
     background: $footer-bg-color;
+}
+
+.bg-purple {
+    background: $purple-color;
 }
 
 .recruitment-box {
